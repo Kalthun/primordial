@@ -4,6 +4,13 @@ A declariative and reproducible NixOS configuration.
 # Structure
 FILLER
 
+# Important Commands
+
+```
+nixos-rebuild switch --flake ~/etc/nixos/#seed
+```
+**NOTE**: seed is the hostname.
+
 # Getting Started
 
 ## ISO
