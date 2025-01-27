@@ -1,7 +1,7 @@
 # primordial
 A declariative and reproducible NixOS configuration.
 
-# 
+# Getting Started
 
-# T ODOs
+# TODOs
 - [ ] everything
