@@ -7,7 +7,7 @@ FILLER
 # Important Commands
 
 ```
-nixos-rebuild switch --flake ~/etc/nixos/#seed
+sudo nixos-rebuild switch --flake ~/etc/nixos/#seed
 ```
 **NOTE**: seed is the hostname.
 
@@ -57,4 +57,4 @@ git clone git@github.com:Kalthun/primordial.git
 TODO
 
 # TODO
-- [X] Structure (with nice diagram)
+- [ ] Structure (with nice diagram)
