@@ -12,7 +12,7 @@
             seed = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs; };
                 modules = [
-                    ./configuration.nix
+                    ./hosts/seed/configuration.nix
                 ];
             };
         };
