@@ -22,7 +22,7 @@
       $container\
       $shell\
       $character
-      """
+      """;
     };
   };
 };
