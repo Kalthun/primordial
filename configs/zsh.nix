@@ -10,7 +10,7 @@
     shellAliases = {
       ls = "eza -1 --icons=always";
       cat = "bat";
-      lg = "lazygit"
+      lg = "lazygit";
     };
 
     history = {
