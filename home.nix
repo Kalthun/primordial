@@ -24,9 +24,6 @@
     ./configs/zsh.nix
   ];
 
-  users.defaultUserShell = pkgs.zsh;
-  programs.starship.enable = true;
-
   home.sessionVariables = {
     EDITOR = "helix";
   };

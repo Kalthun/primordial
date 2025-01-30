@@ -52,6 +52,11 @@
 
   programs.thunar.enable = true;
 
+  programs.zsh.enable = true;
+
+  users.defaultUserShell = pkgs.zsh;
+  programs.starship.enable = true;
+
   # Not Working Right Now
   # hardware.pulseaudio.enable = true;
   # hardware.pulseaudio.support32Bit = true;
