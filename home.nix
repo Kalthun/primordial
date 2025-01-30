@@ -22,6 +22,7 @@
 
   imports = [
     ./configs/zsh.nix
+    ./configs/starship.nix
   ];
 
   home.sessionVariables = {
