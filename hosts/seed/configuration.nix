@@ -63,6 +63,7 @@
   firefox
   discord
   yazi
+  eza
   git
   obsidian
   lazygit

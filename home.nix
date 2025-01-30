@@ -16,6 +16,18 @@
   # changes in each release.
   home.stateVersion = "24.11";
 
+  home.packages = with pkgs; [
+    nnn
+  ];
+
+  imports = [
+    ./configs/zsh.nix
+  ]
+
+  home.sessionVariables = {
+    EDITOR = "helix";
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
