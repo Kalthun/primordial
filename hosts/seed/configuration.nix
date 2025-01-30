@@ -64,14 +64,14 @@
   discord
   yazi
   eza
-  git
+  
   obsidian
   lazygit
   ghostty
   wofi
   waybar
   hyprpaper
-  starship
+  
   vscode
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
