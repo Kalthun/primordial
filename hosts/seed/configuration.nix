@@ -46,21 +46,15 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   programs.hyprland.enable = true;
 
   programs.thunar.enable = true;
 
-  programs.zsh.enable = true;
-
   users.defaultUserShell = pkgs.zsh;
-  programs.starship.enable = true;
 
-  # Not Working Right Now
-  # hardware.pulseaudio.enable = true;
-  # hardware.pulseaudio.support32Bit = true;
- 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -97,7 +91,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
