@@ -22,7 +22,7 @@
 
   imports = [
     ./configs/zsh.nix
-  ]
+  ];
 
   home.sessionVariables = {
     EDITOR = "helix";
