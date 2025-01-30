@@ -24,6 +24,11 @@
                 modules = [
                     ./hosts/seed/configuration.nix
                     home-manager.nixosModules.home-manager
+                    {
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPackages = true;
+                        home-manager.users.kalthun = import ./home.nix;
+                    }
                 ];
             };
         };
