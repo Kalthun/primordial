@@ -43,6 +43,8 @@
     ./configs/helix.nix
 
     ./configs/firefox.nix
+
+    ./configs/stylix.nix
   ];
 
   home.sessionVariables = {
