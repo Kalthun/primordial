@@ -18,8 +18,12 @@
 
   home.packages = with pkgs; [
 
+    alacritty
+    kitty
+    ghostty
+    wezterm
+    
     helix
-
     eza
     bat
     yazi
