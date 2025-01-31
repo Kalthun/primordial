@@ -1,11 +1,9 @@
 { config, pkgs, ... }: {
 
-  programs.ghostty = {
+  programs.ghostty.enable = true;
 
-    enable = true;
-
+  programs.ghostty.settings = {
     window-decoration = false;
-    
   }
   
 }
