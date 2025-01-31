@@ -28,7 +28,6 @@
                         home-manager.useUserPackages = true;
                         home-manager.users.kalthun = import ./home.nix;
                     }
-                    inputs.stylix.nixosModules.stylix
                 ];
             };
         };
