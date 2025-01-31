@@ -17,8 +17,16 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+
+    helix
+
+    eza
     bat
     yazi
+    lazygit
+
+    firefox
+
   ];
 
   imports = [
