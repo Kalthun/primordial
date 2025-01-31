@@ -1,7 +1,5 @@
 { config, pkgs, lib, inputs, ... }: {
 
-    # imports = [ inputs.stylix.nixosModules.stylix ];
-
     stylix = {
         enable = true;
 
@@ -11,6 +9,6 @@
         
         opacity = { terminal = 0.9; };
 
-        base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+        # base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
     };
 }
