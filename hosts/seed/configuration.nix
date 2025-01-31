@@ -10,7 +10,7 @@
       ./hardware-configuration.nix
     ];
 
-  stylix.image = ../wallpapers/sg.png;
+  stylix.image = ../../wallpapers/sg.png
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
