@@ -5,6 +5,8 @@
     stylix = {
         enable = true;
 
+        autoEnable = true;
+
         image = ../wallpapers/sg.png;
         
         opacity = { terminal = 0.9; };
