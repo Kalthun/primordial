@@ -41,6 +41,8 @@
 
     ./configs/git.nix
     ./configs/helix.nix
+
+    ./configs/firefox.nix
   ];
 
   home.sessionVariables = {
