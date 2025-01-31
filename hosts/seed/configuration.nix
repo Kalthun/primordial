@@ -63,15 +63,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	helix
   firefox
   discord
-  yazi
-  eza
-
   obsidian
-  lazygit
-  ghostty
   wofi
   waybar
   hyprpaper
