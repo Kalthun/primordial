@@ -35,9 +35,12 @@
 
   imports = [
     ./configs/ghostty.nix
+
     ./configs/zsh.nix
-    ./configs/starship.nix
+    ./configs/starship.nix    
+
     ./configs/git.nix
+    ./configs/helix.nix
   ];
 
   home.sessionVariables = {
