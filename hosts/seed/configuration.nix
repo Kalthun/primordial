@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/sylix.nix
     ];
 
   # Bootloader.
@@ -53,8 +54,11 @@
 
   programs.thunar.enable = true;
 
+  # Need this for zsh to work
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+
+
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
