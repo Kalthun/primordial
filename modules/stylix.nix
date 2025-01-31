@@ -3,6 +3,9 @@
     imports = [ inputs.stylix.nixosModules.stylix ];
 
     stylix = {
+
+        image = ../wallpapers/sg.png;
+
         enable = true;
         autoEnable = true;
         opacity = { terminal = 0.9; };
