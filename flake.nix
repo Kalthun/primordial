@@ -27,8 +27,6 @@
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
                         home-manager.users.kalthun = import ./home.nix;
-
-                        home-manager.targets.firefox.enable = true;
                     }
                     inputs.stylix.nixosModules.stylix
                 ];
