@@ -49,6 +49,8 @@
     EDITOR = "helix";
   };
 
+  home-manager.sharedModules = [{ stylix.targets.firefox.enable = true; }];
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
