@@ -34,6 +34,7 @@
   ];
 
   imports = [
+    ./configs/ghostty.nix
     ./configs/zsh.nix
     ./configs/starship.nix
     ./configs/git.nix
