@@ -3,14 +3,12 @@
     imports = [ inputs.stylix.nixosModules.stylix ];
 
     stylix = {
-
-        image = ../wallpapers/sg.png;
-
         enable = true;
+        image = ../wallpapers/sg.png;
         autoEnable = true;
         opacity = { terminal = 0.9; };
     };
 
-    stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+    stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
 }
