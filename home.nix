@@ -45,8 +45,6 @@
     ./configs/firefox.nix
 
     ./configs/stylix.nix
-
-    ./configs/hyprland.nix
   ];
 
   home.sessionVariables = {
