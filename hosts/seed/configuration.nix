@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
     ];
 
+  stylix.enable = true;
   stylix.image = ../../wallpapers/sg.png;
 
   # Bootloader.
