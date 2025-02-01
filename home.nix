@@ -17,17 +17,15 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+ 
+    hyprshot
 
-   ghostty
-   
-    helix
-    tmux
     eza
     bat
+    tree
+    fzf
     yazi
     lazygit
-
-    firefox
 
   ];
 
