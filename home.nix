@@ -18,12 +18,10 @@
 
   home.packages = with pkgs; [
 
-    alacritty
-    kitty
-    ghostty
-    wezterm
-    
+   ghostty
+   
     helix
+    tmux
     eza
     bat
     yazi
