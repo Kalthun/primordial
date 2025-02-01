@@ -8,10 +8,11 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/stylix.nix
     ];
 
-  stylix.enable = true;
-  stylix.image = ../../wallpapers/sg.png;
+  # stylix.enable = true;
+  # stylix.image = ../../wallpapers/sg.png;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
