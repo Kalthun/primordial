@@ -43,6 +43,8 @@
     ./configs/firefox.nix
 
     ./configs/stylix.nix
+
+    ./configs/tmux.nix
   ];
 
   home.sessionVariables = {
