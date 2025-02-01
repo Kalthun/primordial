@@ -11,10 +11,7 @@
       ../../modules/stylix.nix
     ];
 
-  # stylix.enable = true;
-  # stylix.image = ../../wallpapers/sg.png;
-
-  # Bootloader.
+   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
