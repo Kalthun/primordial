@@ -14,11 +14,11 @@
 
         stylix.url = "github:danth/stylix";
 
-        nvf.url = "github:notashelf/nvf";
+        # nvf.url = "github:notashelf/nvf";
     };
 
     outputs = {
-        self, nixpkgs, nixos-hardware, home-manager, stylix, nvf, ...
+        self, nixpkgs, nixos-hardware, home-manager, stylix, ...
     } @inputs: {
         nixosConfigurations = {
             seed = nixpkgs.lib.nixosSystem {
@@ -28,10 +28,9 @@
                     home-manager.nixosModules.home-manager {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
-                        home-manager.users.kalthun = import ./home.nix;
+                        home-manager.users.kalthun = import ./home.nix;                       
                     }
-                    stylix.nixosModules.stylix
-                    nvf.homeManagerModules.default
+                    stylix.nixosModules.stylix # <- Includes both NixOS and Homemanager Modules
                 ];
             };
         };
