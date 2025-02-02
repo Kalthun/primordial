@@ -3,7 +3,7 @@
   stylix = {
     enable = true;
     image = ../wallpapers/snore.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/greenscreen.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
   };
 
 }
