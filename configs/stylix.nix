@@ -19,13 +19,13 @@
     };
 
     monospace = {
-      package = pkgs.cascadia-code;
+      package = pkgs.nerd-fonts.caskaydia-cove;
       name = "cascadia-code";
     };
 
     emoji = {
-      package = pkgs.noto-fonts-emoji;
-      name = "Noto Color Emoji";
+      package = pkgs.nerd-fonts.caskaydia-cove;
+      name = "caskaydia-cove";
     };
   };
 
