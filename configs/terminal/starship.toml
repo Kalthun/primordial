@@ -1,0 +1,65 @@
+# The \ at the end of line means don't add newline character
+format = """
+[╭─](bold green)\
+[\\(](bold white)\
+$all\
+${custom.end}\
+[\\)](bold white)\
+$cmd_duration\
+$linebreak
+[╰─](bold green)\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$character
+"""
+
+[custom.end]
+format = " "
+style = "bold white"
+when = "[ 'a' = 'a' ]"
+
+[cmd_duration]
+format=' took [$duration]($style) '
+
+[line_break]
+disabled = true
+
+[battery]
+format = '[\[$symbol$percentage\]]($style)[─](bold green)'
+
+[[battery.display]]
+threshold = 33
+style = 'bold red'
+
+[[battery.display]]
+threshold = 50
+style = 'bold yellow'
+
+[character]
+success_symbol = '[\$](bold white)'
+error_symbol = '[ ](bold red)'
+
+[directory]
+truncation_length = 0
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Desktop" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"repos" = '󰳐 '
+"dotfiles" = ' '
+# Keep in mind that the order matters. For example:
+# "Important Documents" = " 󰈙 "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important 󰈙 " = " 󰈙 "
