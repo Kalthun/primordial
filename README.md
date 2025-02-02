@@ -28,6 +28,16 @@ sudo chown -R $(id -un):users ~/etc/nixos
 sudo ln -s ~/etc/nixos /etc/
 ```
 
+## TODO: Relocate After Cloning (cause running sudo one time isn't that bad)
+Now you can name the config whatever you want!
+```
+git clone ...
+sudo rm /etc/nixos/configuration.nix
+sudo mv /etc/nixos/hardware-configuration.nix ~/primordial
+sudo chown -R $(id -un):users ~/primordial
+sudo ln -s ~/etc/nixos ~/primordial
+```
+
 ## Setup Cloning Evironment
 ```
 environment.systemPackages = with pkgs; [
