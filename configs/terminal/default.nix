@@ -6,5 +6,5 @@
     ./tmux.nix
     ./helix.nix
     ./git.nix
-  ]
+  ];
 }
