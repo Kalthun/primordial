@@ -30,7 +30,10 @@
   ];
 
   imports = [
-    ./configs
+    ./configs/terminal
+    ./configs/wayland
+    ./configs/firefox.nix
+    ./configs/stylix.nix
   ];
 
   home.sessionVariables = {
