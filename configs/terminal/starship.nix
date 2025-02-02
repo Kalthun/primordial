@@ -9,10 +9,10 @@
       format = lib.concatStrings [
 
         "[╭─](bold green)\"
-        "[(](bold white)\"
+        "[\(](bold white)\"
         "$all\"
         "${custom.end}\"
-        "[)](bold white)\"
+        "[\)](bold white)\"
         "$cmd_duration\"
         "$linebreak"
         "[╰─](bold green)\"
