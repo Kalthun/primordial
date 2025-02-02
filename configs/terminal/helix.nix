@@ -7,5 +7,5 @@
       line-number = "relative";
     };
   };
-  
+
 }

@@ -6,5 +6,5 @@
     window-decoration = false;
     confirm-close-surface = false;
   };
-  
+
 }
