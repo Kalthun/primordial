@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --asterisks --remember-user-session --cmd Hyprland";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet -t -r --asterisks --cmd Hyprland";
         user = "kalthun";
       };
     };
