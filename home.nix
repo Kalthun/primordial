@@ -30,19 +30,7 @@
   ];
 
   imports = [
-    ./configs/ghostty.nix
-
-    ./configs/zsh.nix
-    ./configs/starship.nix    
-
-    ./configs/git.nix
-    ./configs/helix.nix
-
-    ./configs/firefox.nix
-
-    ./configs/stylix.nix
-
-    ./configs/tmux.nix
+    ./configs
   ];
 
   home.sessionVariables = {
