@@ -51,6 +51,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # IMPORTANT: need this
   programs.hyprland.enable = true;
 
   programs.thunar.enable = true;
