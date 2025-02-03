@@ -72,6 +72,7 @@
         format = "󰖩 {essid}";
         format-disconnected = "󰖪 disconnected";
       };
+      # TODO: click opens calendar?
       clock = {
         format = " {:%I:%M %p   %m/%d} ";
         tooltip-format = ''
