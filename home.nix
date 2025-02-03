@@ -18,6 +18,9 @@
 
   home.packages = with pkgs; [
  
+    cowsay
+    pokemonsay
+
     hyprshot
 
     eza
@@ -25,6 +28,7 @@
     tree
     fzf
     yazi
+
     lazygit
     lazydocker
 
