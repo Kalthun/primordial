@@ -19,9 +19,7 @@
   home.packages = with pkgs; [
  
     fortune
-    cowsay
-    pokemonsay
-
+  
     hyprshot
 
     eza
