@@ -7,7 +7,7 @@ A declariative and reproducible NixOS configuration.
 # Important Commands
 
 ```
-sudo nixos-rebuild switch --flake ~/etc/nixos/#[hostname]
+sudo nixos-rebuild switch --flake ~/primordial/#[hostname]
 ```
 
 # Getting Started
@@ -69,7 +69,7 @@ cp ~/primordial/hosts/seed/configuration.nix ~/primordial/hosts/[hostname]
 
 ```
 sudo chown -R $(id -un):users ~/primordial
-sudo ln -s ~/etc/nixos ~/primordial
+sudo ln -s ~/primordial/* /etc/nixos/
 ```
 
 ## SETUP NEW USER IN `flake.nix`
@@ -80,7 +80,7 @@ DO NOT FORGET THIS!!!!
 
 ## Rebuild (again) & Reboot
 ```
-sudo nixos-rebuild switch --flake ~/etc/nixos/#[hostname]
+sudo nixos-rebuild switch --flake ~/primordial/#[hostname]
 ```
 
 # TODO
