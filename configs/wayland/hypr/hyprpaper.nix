@@ -8,7 +8,7 @@
         "../../../wallpapers/art.png"
       ];
       wallpaper = [
-        "DP-1, ../../../wallpapers/art.png"
+        "DP-2, ../../../wallpapers/art.png"
       ];
     };
   };
