@@ -68,7 +68,6 @@
   discord
   obsidian
   wofi
-  waybar
   hyprpaper
 
   vscode

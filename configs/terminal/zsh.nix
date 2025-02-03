@@ -24,8 +24,6 @@
         "git"
         "sudo"
         "colored-man-pages"
-        "command-not-found"
-
       ];
       theme = "duellj";
     };
