@@ -75,6 +75,9 @@ sudo ln -s ~/etc/nixos ~/primordial
 ## SETUP NEW USER IN `flake.nix`
 Or else.
 
+## `git add -A`
+DO NOT FORGET THIS!!!!
+
 ## Rebuild (again) & Reboot
 ```
 sudo nixos-rebuild switch --flake ~/etc/nixos/#[hostname]
