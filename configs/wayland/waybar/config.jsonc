@@ -26,8 +26,7 @@
         "clock"
     ],
     //Modules configuration
-
     "include": [
-		"~/.config/waybar/modules.json"
+		"~/etc/nixos/configs/wayland/waybar/modules.json"
 	]
 }
