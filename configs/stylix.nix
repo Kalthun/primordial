@@ -4,6 +4,7 @@
   stylix.autoEnable = true;
 
   stylix.opacity.terminal = 0.95;
+  stylix.opacity.desktop = 0.0;
 
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
