@@ -72,6 +72,9 @@ sudo chown -R $(id -un):users ~/primordial
 sudo ln -s ~/etc/nixos ~/primordial
 ```
 
+## SETUP NEW USER IN `flake.nix`
+Or else.
+
 ## Rebuild (again) & Reboot
 ```
 sudo nixos-rebuild switch --flake ~/etc/nixos/#[hostname]
