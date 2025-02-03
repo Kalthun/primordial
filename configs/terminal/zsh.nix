@@ -20,8 +20,16 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" ];
+      plugins = [
+        "git"
+        "sudo"
+        "colored-man-pages"
+        "command-not-found"
+
+      ];
+      theme = "duellj"
     };
 
   };
+
 }

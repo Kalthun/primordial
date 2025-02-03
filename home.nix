@@ -26,6 +26,7 @@
     fzf
     yazi
     lazygit
+    lazydocker
 
   ];
 
