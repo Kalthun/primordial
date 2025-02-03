@@ -8,7 +8,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      ls = "eza -1 --icons=always";
+      ls = "eza -1 --icons=always --group-directories-first";
       cat = "bat";
       lg = "lazygit";
     };
