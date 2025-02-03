@@ -27,7 +27,7 @@
         "command-not-found"
 
       ];
-      theme = "duellj"
+      theme = "duellj";
     };
 
   };
