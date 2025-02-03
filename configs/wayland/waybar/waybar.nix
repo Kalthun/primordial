@@ -82,7 +82,7 @@
         format = "{icon} {volume}%";
         tooltip = false;
         format-muted = " Muted";
-        on-click = "pamixer -t";
+        on-click = "pavucontrol"; # TODO: make floating in spot
         on-scroll-up = "pamixer -i 5";
         on-scroll-down = "pamixer -d 5";
         scroll-step = 5;
