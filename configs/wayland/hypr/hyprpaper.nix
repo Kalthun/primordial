@@ -7,11 +7,11 @@
     settings = {
 
       preload = [
-        "../../../wallpapers/knight.png"
+        "~/primordial/wallpapers/art.png"
       ];
 
       wallpaper = [
-        "DP-2,../../../wallpapers/knight.png"
+        "DP-2,~/primordial/wallpapers/art.png"
       ];
 
     };
