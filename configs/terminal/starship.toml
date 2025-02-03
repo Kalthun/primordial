@@ -58,7 +58,11 @@ truncation_symbol = "…/"
 "Pictures" = " "
 "repos" = '󰳐 '
 "dotfiles" = ' '
-"primordial" = ''
+"primordial" = '󱄅'
+"seed" = ''
+"runner" = '󰜎'
+"piller" = '󰜂'
+"traveller" = '󰖇'
 # Keep in mind that the order matters. For example:
 # "Important Documents" = " 󰈙 "
 # will not be replaced, because "Documents" was already substituted before.
