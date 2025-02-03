@@ -21,6 +21,7 @@
         self, nixpkgs, nixos-hardware, home-manager, stylix, ...
     } @inputs: {
         nixosConfigurations = {
+
             seed = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs; };
                 modules = [
@@ -28,11 +29,29 @@
                     home-manager.nixosModules.home-manager {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
-                        home-manager.users.kalthun = import ./home.nix;                       
+                        home-manager.users.kalthun = import ./home.nix;
+                        home-manager.backupFileExtension = "backup";
                     }
                     stylix.nixosModules.stylix # <- Includes both NixOS and Homemanager Modules
                 ];
             };
+
+            runner = nixpkgs.lib.nixosSystem {
+                specialArgs = { inherit inputs; };
+                modules = [
+                    ./hosts/runner/configuration.nix
+                    home-manager.nixosModules.home-manager {
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPackages = true;
+                        home-manager.users.kalthun = import ./home.nix;
+                        home-manager.backupFileExtension = "backup";
+                    }
+                    stylix.nixosModules.stylix # <- Includes both NixOS and Homemanager Modules
+                ];
+            };
+
+
+
         };
     };
 }
