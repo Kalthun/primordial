@@ -21,6 +21,7 @@
     fortune
   
     hyprshot
+    hyprpaper
 
     eza
     bat
