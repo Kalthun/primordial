@@ -5,13 +5,15 @@
     enable = true;
 
     settings = {
+
       preload = [
-        "../../../wallpapers/art.png"
+        "../../../wallpapers/knight.png"
       ];
 
       wallpaper = [
-        "DP-2,../../../wallpapers/art.png"
+        "DP-2,../../../wallpapers/knight.png"
       ];
+
     };
 
   };
