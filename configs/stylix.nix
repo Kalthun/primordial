@@ -26,7 +26,6 @@
 
     emoji = {
       package = pkgs.nerd-fonts.caskaydia-cove;
-      name = "Caskaydia Cove Nerd Font Propo";
     };
   };
 
