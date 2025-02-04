@@ -1,7 +1,12 @@
 { config, pkgs, ... }: {
 
-  programs.wezterm.enable = true;
+  programs.wezterm = {
 
-  # programs.wezterm.extraConfig = 
+    enable = true;
+    enableZshIntegration = true;
+
+    extraConfig = builtins.readFile ./wezterm.lua;
+    
+  }
   
 }

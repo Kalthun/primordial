@@ -21,12 +21,12 @@
 
     monospace = {
       package = pkgs.nerd-fonts.caskaydia-cove;
-      name = "caskaydia-code";
+      name = "Caskaydia Cove";
     };
 
     emoji = {
       package = pkgs.nerd-fonts.caskaydia-cove;
-      name = "caskaydia-cove";
+      name = "Caskaydia Cove";
     };
   };
 
