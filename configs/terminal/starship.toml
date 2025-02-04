@@ -1,10 +1,10 @@
 # The \ at the end of line means don't add newline character
 format = """
 [╭─](bold green)\
-[\\(](bold white)\
+[\\(](white)\
 $all\
 ${custom.end}\
-[\\)](bold white)\
+[\\)](white)\
 $cmd_duration\
 $linebreak
 [╰─](bold green)\
@@ -41,7 +41,7 @@ threshold = 50
 style = 'bold yellow'
 
 [character]
-success_symbol = '[\$](bold white)'
+success_symbol = '[\$](white)'
 error_symbol = '[ ](bold red)'
 
 [directory]
