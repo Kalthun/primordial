@@ -1,6 +1,6 @@
 { configs, pkgs, libs, ... }: {
-  stylix.enable = true;
 
+  stylix.enable = true;
   stylix.autoEnable = true;
 
   stylix.opacity.terminal = 0.95;
@@ -21,7 +21,7 @@
 
     monospace = {
       package = pkgs.nerd-fonts.caskaydia-cove;
-      name = "cascadia-code";
+      name = "caskaydia-code";
     };
 
     emoji = {
