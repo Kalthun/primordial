@@ -20,13 +20,13 @@
     };
 
     monospace = {
-      package = pkgs.nerd-fonts.jetbrains-mono;
-      name = "JetBrainsMono Nerd Font Mono";
+      package = pkgs.nerd-fonts.caskaydia-cove;
+      name = "CaskaydiaCove Nerd Font";
     };
 
     emoji = {
-      package = pkgs.nerd-fonts.jetbrains-mono;
-      name = "JetBrainsMono Nerd Font Mono";
+      package = pkgs.nerd-fonts.caskaydia-cove;
+      name = "CaskaydiaCove Nerd Font";
     };
   };
 
