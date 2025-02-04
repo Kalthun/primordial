@@ -24,7 +24,7 @@
       name = "JetBrainsMono Nerd Font Mono";
     };
 
-    emojis = {
+    emoji = {
       package = pkgs.nerd-fonts.jetbrains-mono;
       name = "JetBrainsMono Nerd Font Mono";
     };
