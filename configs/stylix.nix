@@ -23,6 +23,11 @@
       package = pkgs.nerd-fonts.jetbrains-mono;
       name = "JetBrainsMono Nerd Font Mono";
     };
+
+    emojis = {
+      package = pkgs.nerd-fonts.jetbrains-mono;
+      name = "JetBrainsMono Nerd Font Mono";
+    };
   };
 
   stylix.fonts.sizes.terminal = 12;
