@@ -8,6 +8,18 @@
 
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
+  # stylix = {
+
+  #   cursor = {
+
+  #     package = pkgs.qogir-icon-theme;
+  #     name = "Qogir Cursors";
+  #     size = 16;
+      
+  #   };
+    
+  # };
+
   stylix.fonts = {
     serif = {
       package = pkgs.dejavu_fonts;
