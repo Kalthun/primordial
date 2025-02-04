@@ -13,19 +13,19 @@
       height = 0;
       modules-left = [
         "hyprland/workspaces"
-        "custom/divider"
-        "custom/weather"
-        "custom/divider"
-        "cpu"
-        "custom/divider"
-        "memory"
+        # "custom/divider"
+        # "custom/weather"
+        # "custom/divider"
+        # "cpu"
+        # "custom/divider"
+        # "memory"
       ];
       modules-center = [ "hyprland/window" ];
       modules-right = [
         "tray"
         "network"
-        "custom/divider"
-        "backlight"
+        # "custom/divider"
+        # "backlight"
         "custom/divider"
         "pulseaudio"
         "custom/divider"
