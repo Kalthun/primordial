@@ -32,6 +32,8 @@
     lazygit
     lazydocker
 
+    spotify-player
+
   ];
 
   imports = [
