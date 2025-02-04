@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local config = {}
 
-config.font = wezterm.font 'Caskaydia Cove Nerd'
+config.font = wezterm.font 'Caskaydia Cove Nerd Mono'
 
 config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
