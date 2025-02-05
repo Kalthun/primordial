@@ -19,16 +19,11 @@
   home.pointerCursor = lib.mkForce {
 
     gtk.enable = lib.mkForce true;
-
     x11.enable = lib.mkForce true;
 
-    hyprcursor.enable = lib.mkForce false;
-
     package = lib.mkForce pkgs.catppuccin-cursors.mochaLight;
-
     name = lib.mkForce "catppuccin-mocha-light-cursors";
-
-    size = lib.mkForce 24;
+    size = lib.mkForce 36;
 
   };
 
