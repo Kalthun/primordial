@@ -12,6 +12,10 @@
         "HYPRCURSOR_SIZE,24"
         
       ];
+
+      exec-once = [
+        "hyprctl setcursor catppuccin-mocha-light-cursors 48"
+      ];
       
     };
 

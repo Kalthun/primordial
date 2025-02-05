@@ -16,17 +16,6 @@
   # changes in each release.
   home.stateVersion = "24.11";
 
-  home.pointerCursor = lib.mkForce {
-
-    gtk.enable = lib.mkForce true;
-    x11.enable = lib.mkForce true;
-
-    package = lib.mkForce pkgs.catppuccin-cursors.mochaLight;
-    name = lib.mkForce "catppuccin-mocha-light-cursors";
-    size = lib.mkForce 36;
-
-  };
-
   home.packages = with pkgs; [
  
     fortune

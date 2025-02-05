@@ -32,4 +32,10 @@
 
   stylix.fonts.sizes.terminal = 14;
 
+  stylix.cursor = {
+    package = pkgs.catppuccin-cursors.mochaLight;
+    name = "catppuccin-mocha-light-cursors";
+    size = 36;
+  };
+
 }
