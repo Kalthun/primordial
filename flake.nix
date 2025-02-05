@@ -46,7 +46,8 @@
                         home-manager.useUserPackages = true;
                         home-manager.users.kalthun = import ./home.nix;
                         home-manager.backupFileExtension = "backup";
-                        home-manager.extraSpecialArgs = { inherit inputs; };                    }
+                        home-manager.extraSpecialArgs = { inherit inputs; };
+                    }
                     stylix.nixosModules.stylix # <- Includes both NixOS and Homemanager Modules
                 ];
             };

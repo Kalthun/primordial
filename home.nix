@@ -37,7 +37,7 @@
   ];
 
   imports = [
-    inputs.nvf.nixosModules.nvf
+    inputs.nvf.homeManagerModules.default
     ./configs/terminal
     ./configs/wayland
     ./configs/firefox.nix
