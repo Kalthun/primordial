@@ -16,6 +16,15 @@
   # changes in each release.
   home.stateVersion = "24.11";
 
+  home.pointerCursor = {
+    hyprcursor.enable = lib.mkDefault true;
+    x11.enable = lib.mkDefault true;
+    gtk.enable = lib.mkDefault true;
+    package = lib.mkDefault pkgs.bibata-cursors;
+    name = lib.mkDefault "Bibata-Modern-Classic";
+    size = lib.mkDefault 32;
+  };
+
   home.packages = with pkgs; [
  
     fortune
