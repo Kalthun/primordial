@@ -17,12 +17,12 @@
   home.stateVersion = "24.11";
 
   home.pointerCursor = {
-    hyprcursor.enable = lib.mkDefault true;
+    hyprcursor.enable = lib.mkDefault false;
     x11.enable = lib.mkDefault true;
     gtk.enable = lib.mkDefault true;
-    package = lib.mkDefault pkgs.catppuccin-cursors.mochaDark;
-    name = lib.mkDefault "Catppuccin-Mocha-Dark-Cursors";
-    size = lib.mkDefault 32;
+    package = lib.mkDefault pkgs.catppuccin-cursors.mochaLight;
+    name = lib.mkDefault "catppuccin-mocha-light-cursors";
+    size = lib.mkDefault 16;
   };
 
   home.packages = with pkgs; [
