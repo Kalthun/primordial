@@ -16,14 +16,21 @@
   # changes in each release.
   home.stateVersion = "24.11";
 
-  # home.pointerCursor = {
-  #   hyprcursor.enable = lib.mkDefault true;
-  #   x11.enable = lib.mkDefault true;
-  #   gtk.enable = lib.mkDefault true;
-  #   package = lib.mkDefault pkgs.catppuccin-cursors.mochaLight;
-  #   name = lib.mkDefault "catppuccin-mocha-light-cursors";
-  #   size = lib.mkDefault 16;
-  # };
+  home.pointerCursor = lib.mkForce {
+
+    gtk.enable = lib.mkForce true;
+
+    x11.enable = lib.mkForce true;
+
+    hyprcursor.enable = lib.mkForce false;
+
+    package = lib.mkForce pkgs.catppuccin-cursors.mochaLight;
+
+    name = lib.mkForce "catppuccin-mocha-light-cursors";
+
+    size = lib.mkForce 24;
+
+  };
 
   home.packages = with pkgs; [
  

@@ -8,7 +8,7 @@
       
       env = [
 
-        "XCURSOR_SIZE,128"
+        "XCURSOR_SIZE,24"
         
       ];
       
