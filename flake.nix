@@ -14,11 +14,11 @@
 
         stylix.url = "github:danth/stylix";
 
-        # nvf.url = "github:notashelf/nvf";
+        nvf.url = "github:notashelf/nvf";
     };
 
     outputs = {
-        self, nixpkgs, nixos-hardware, home-manager, stylix, ...
+        self, nixpkgs, nixos-hardware, home-manager, stylix, nvf, ...
     } @inputs: {
         nixosConfigurations = {
 
