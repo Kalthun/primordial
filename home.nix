@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the
@@ -37,10 +37,12 @@
   ];
 
   imports = [
+    inputs.nvf.nixosModules.nvf
     ./configs/terminal
     ./configs/wayland
     ./configs/firefox.nix
     ./configs/stylix.nix
+    ./configs/nvf/nvf.nix
   ];
 
   home.sessionVariables = {

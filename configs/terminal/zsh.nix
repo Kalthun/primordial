@@ -9,6 +9,7 @@
 
     shellAliases = {
       ls = "eza -1 --icons=always --group-directories-first";
+      tree = "tree --dirsfirst";
       cat = "bat";
       lg = "lazygit";
     };
