@@ -42,6 +42,6 @@
     };
   };
 
-  stylix.fonts.sizes.terminal = 11;
+  stylix.fonts.sizes.terminal = 14;
 
 }

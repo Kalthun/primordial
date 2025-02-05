@@ -1,8 +1,10 @@
 { config, pkgs, lib, inputs, ... }: {
 
+  programs.neovim.enable = true;
+
   programs.nvf = {
 
-    enable = true;
+    enable = false;
 
     settings = {
       
