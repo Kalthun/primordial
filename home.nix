@@ -20,8 +20,8 @@
     hyprcursor.enable = lib.mkDefault true;
     x11.enable = lib.mkDefault true;
     gtk.enable = lib.mkDefault true;
-    package = lib.mkDefault pkgs.bibata-cursors;
-    name = lib.mkDefault "Bibata-Modern-Classic";
+    package = lib.mkDefault pkgs.catppuccin-cursors.mochaDark;
+    name = lib.mkDefault "Catppuccin-Mocha-Dark-Cursors";
     size = lib.mkDefault 32;
   };
 
