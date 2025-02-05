@@ -8,11 +8,6 @@
       
       env = [
 
-        "XCURSOR_SIZE,24"
-        "HYPRCURSOR_SIZE,24"
-
-        "WLR_NO_HARDWARE_CURSORS,1"
-        
       ];
 
       exec-once = [
