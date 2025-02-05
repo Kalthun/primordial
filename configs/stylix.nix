@@ -1,4 +1,4 @@
-{ configs, pkgs, libs, ... }: {
+{ configs, pkgs, lib, ... }: {
 
   stylix.enable = true;
   stylix.autoEnable = true;
@@ -32,10 +32,20 @@
 
   stylix.fonts.sizes.terminal = 14;
 
-  stylix.cursor = {
+  # stylix.cursor = {
+  #   package = pkgs.catppuccin-cursors.mochaLight;
+  #   name = "catppuccin-mocha-light-cursors";
+  #   size = 36;
+  # };
+
+  home.pointerCursor = lib.mkDefault {
+    gtk.enable = true;
+    x11.enable = true;
     package = pkgs.catppuccin-cursors.mochaLight;
     name = "catppuccin-mocha-light-cursors";
     size = 36;
   };
+
+  gtk.enable = true;
 
 }
