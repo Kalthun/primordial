@@ -53,8 +53,7 @@
 
   # IMPORTANT: need this
   programs.hyprland.enable = true;
-  programs.hyprland.xwayland.enable = true;
-  
+ 
   programs.thunar.enable = true;
 
   # Enable sound with pipewire.
