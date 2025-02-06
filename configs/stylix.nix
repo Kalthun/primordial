@@ -1,6 +1,6 @@
 { configs, pkgs, lib, ... }: {
 
-  stylix.image = "~/primordial/wallpapers/kanagawa.png";
+  stylix.image = ../wallpapers/kanagawa.png;
 
   stylix.enable = true;
   stylix.autoEnable = true;
