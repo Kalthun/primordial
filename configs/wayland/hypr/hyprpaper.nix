@@ -8,7 +8,6 @@
 
       preload = [
         "~/primordial/wallpapers/art.png"
-        "~/primordial/wallpapers/art2.png"
         "~/primordial/wallpapers/sg.png"
         "~/primordial/wallpapers/knight.png"
       ];
@@ -18,7 +17,7 @@
         "DP-2, ~/primordial/wallpapers/art.png"
         "eDP-1,~/primordial/wallpapers/knight.png"
         "DP-6, ~/primordial/wallpapers/sg.png"
-        "DP-7, ~/primordial/wallpapers/art2.png"
+        "DP-7, ~/primordial/wallpapers/art.png"
       ];
 
     };
