@@ -7,10 +7,6 @@
     disable_logs = false;
 
     settings = {
-
-      cursor = {
-        no_hardware_cursors = true;
-      };
       
       env = [
 
