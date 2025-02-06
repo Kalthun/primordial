@@ -24,6 +24,8 @@
     hyprpaper
     hyprpicker
     hyprutils
+    hyprsunset
+    hyprlang
     wl-clipboard
 
     eza
