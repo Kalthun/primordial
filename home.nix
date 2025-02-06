@@ -22,6 +22,7 @@
   
     hyprshot
     hyprpaper
+    hyprpicker
     wl-clipboard
 
     eza
@@ -35,6 +36,7 @@
 
     spotify-player
     playerctl
+    oneko
 
     nwg-look
 
