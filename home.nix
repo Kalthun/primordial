@@ -23,6 +23,7 @@
     hyprshot
     hyprpaper
     hyprpicker
+    hyprutils
     wl-clipboard
 
     eza

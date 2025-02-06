@@ -4,12 +4,15 @@
     enable = true;
     extraConfig = builtins.readFile ./hyprland.config;
 
+    disable_logs = false;
+
     settings = {
+
+      cursor = {
+        no_hardware_cursors = true;
+      };
       
       env = [
-
-        # "WLR_NO_HARDWARE_CURSORS,1"
-        # "AQ_NO_ATOMIC=-1"
 
       ];
 
