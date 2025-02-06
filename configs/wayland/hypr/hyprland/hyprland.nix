@@ -15,7 +15,7 @@
 
       exec-once = [
         # "hyprctl setcursor catppuccin-mocha-light-cursors 48"
-        "hyprctl setcursor Pokemon 48"
+        "hyprctl setcursor Pokemon 24"
       ];
       
     };

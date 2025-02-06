@@ -39,7 +39,7 @@
     # name = "catppuccin-mocha-light-cursors";
     package = pkgs.pokemon-cursor;
     name = "Pokemon";
-    size = 36;
+    size = 24;
   };
 
 }
