@@ -6,6 +6,7 @@
     hyprpaper
     hyprshot
     hyprcursor
+    hyprsysteminfo
     waybar
     wl-clipboard
   ];
