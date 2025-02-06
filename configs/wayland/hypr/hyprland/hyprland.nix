@@ -4,8 +4,6 @@
     enable = true;
     extraConfig = builtins.readFile ./hyprland.config;
 
-    disable_logs = false;
-
     settings = {
       
       env = [
