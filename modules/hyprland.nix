@@ -1,5 +1,23 @@
 { config, pkgs, lib, ... }: {
 
+  environment.systemPackages = with pkgs; [
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    hyprpaper
+    hyprshot
+    hyprcursor
+    waybar
+    wl-clipboard
+  ];
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal
+    ];
+  };
+
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
   
@@ -13,6 +31,13 @@
       XDG_SESSION_TYPE = "wayland";
       XDG_SESSION_DESKTOP = "Hyprland";
 
+      GBM_BACKEND = "nvidia-drm";
+      __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+      LIBVA_DRIVER_NAME = "nvidia";
+      __GL_GSYNC_ALLOWED = "1";
+      __GL_VRR_ALLOWED = "0";
+      WLR_DRM_NO_ATOMIC = "1";
+
       QT_AUTO_SCREEN_SCALE_FACTOR = "1";
       QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
       QT_QPA_PLATFORM = "wayland";
@@ -20,6 +45,9 @@
 
       GDK_SCALE = "2";
       
+      ELECTRON_OZONE_PLATFORM_HINT = "auto";
+
+      NVD_BACKEND = "direct";
     };
   };
 }
