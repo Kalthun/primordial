@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ../../modules/stylix.nix
       ../../modules/tuigreet.nix
+      ../../modules/esc-caps-lock.nix
     ];
 
    # Bootloader.

@@ -34,8 +34,9 @@
 
     spotify-player
     playerctl
+
     nwg-look
-    pokemon-cursor
+    pokemon-cursor    
 
   ];
 
