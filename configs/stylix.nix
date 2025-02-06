@@ -32,20 +32,10 @@
 
   stylix.fonts.sizes.terminal = 14;
 
-  # stylix.cursor = {
-  #   package = pkgs.catppuccin-cursors.mochaLight;
-  #   name = "catppuccin-mocha-light-cursors";
-  #   size = 36;
-  # };
-
-  home.pointerCursor = lib.mkDefault {
-    gtk.enable = true;
-    x11.enable = true;
+  stylix.cursor = {
     package = pkgs.catppuccin-cursors.mochaLight;
     name = "catppuccin-mocha-light-cursors";
     size = 36;
   };
-
-  gtk.enable = true;
 
 }

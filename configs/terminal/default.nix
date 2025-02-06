@@ -7,6 +7,7 @@
     ./tmux.nix
     ./zellij.nix
     ./helix.nix
+    ./nvf.nix
     ./git.nix
   ];
 }

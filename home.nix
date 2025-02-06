@@ -33,6 +33,9 @@
     lazydocker
 
     spotify-player
+    playerctl
+    nwg-look
+    pokemon-cursor
 
   ];
 
@@ -42,7 +45,6 @@
     ./configs/wayland
     ./configs/firefox.nix
     ./configs/stylix.nix
-    ./configs/nvf/nvf.nix
   ];
 
   home.sessionVariables = {
