@@ -1,6 +1,6 @@
 { configs, pkgs, lib, ... }: {
 
-  stylix.image = ../wallpapers/kanagawa.png;
+  # stylix.image = ../wallpapers/kanagawa.png;
 
   stylix.enable = true;
   stylix.autoEnable = true;
@@ -8,7 +8,7 @@
   stylix.opacity.terminal = 0.95;
   stylix.opacity.desktop = 0.0;
 
-  # stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
   stylix.fonts = {
     serif = {
