@@ -22,6 +22,7 @@
   
     hyprshot
     hyprpaper
+    wl-copy
 
     eza
     bat
