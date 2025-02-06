@@ -35,8 +35,10 @@
   stylix.fonts.sizes.terminal = 14;
 
   stylix.cursor = {
-    package = pkgs.catppuccin-cursors.mochaLight;
-    name = "catppuccin-mocha-light-cursors";
+    # package = pkgs.catppuccin-cursors.mochaLight;
+    # name = "catppuccin-mocha-light-cursors";
+    package = pkgs.pokemon-cursor;
+    name = "Pokemon";
     size = 36;
   };
 

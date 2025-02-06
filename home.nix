@@ -36,7 +36,6 @@
     playerctl
 
     nwg-look
-    pokemon-cursor    
 
   ];
 
