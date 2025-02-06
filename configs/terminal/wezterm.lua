@@ -4,7 +4,7 @@ local config = {}
 config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
 config.default_cursor_style = 'SteadyBar'
-config.max_fps = 144
+config.enable_wayland = true
 
 config.window_padding = {
   left = 2,
