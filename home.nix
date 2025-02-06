@@ -37,7 +37,6 @@
 
     spotify-player
     playerctl
-    oneko
 
     nwg-look
 
