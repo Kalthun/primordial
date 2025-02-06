@@ -2,7 +2,7 @@
 
   stylix = {
     enable = true;
-    image = ~/primordial/wallpapers/kanagawa.png;
+    image = ../wallpapers/kanagawa.png;
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
   };
 
