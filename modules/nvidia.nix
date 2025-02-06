@@ -10,7 +10,7 @@
 
     powerManagement.enable = true;
 
-    powerManagement.finegraned = false;
+    powerManagement.finegrained = false;
 
     open = false;
 
