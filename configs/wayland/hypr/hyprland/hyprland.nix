@@ -8,7 +8,8 @@
       
       env = [
 
-        "AQ_NO_ATOMIC=-1"
+        # "WLR_NO_HARDWARE_CURSORS,1"
+        # "AQ_NO_ATOMIC=-1"
 
       ];
 
