@@ -22,7 +22,7 @@
   
     hyprshot
     hyprpaper
-    wl-copy
+    wl-clipboard
 
     eza
     bat
