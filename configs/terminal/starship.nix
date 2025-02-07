@@ -7,10 +7,6 @@
 
     settings = pkgs.lib.importTOML ./starship.toml;
 
-    settings = {
-      add_newline = false
-    };
-
   };
 
 }
