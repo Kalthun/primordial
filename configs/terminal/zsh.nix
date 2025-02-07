@@ -27,12 +27,7 @@
         "vi-mode"
         "colored-man-pages"
       ];
-      theme = "duellj";
     };
-
-    initExtra = ''
-      bindkey '^[[27;5;9~' autosuggest-accept
-    '';
 
   };
 

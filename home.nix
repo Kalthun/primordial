@@ -54,6 +54,7 @@
 
   home.sessionVariables = {
     EDITOR = "helix";
+    ZELLIJ_AUTO_ATTACH = "true";
   };
 
   # Let Home Manager install and manage itself.
