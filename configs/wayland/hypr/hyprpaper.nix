@@ -16,7 +16,7 @@
       ];
 
       wallpaper = [
-        "DP-1, ~/primordial/wallpapers/fre/fre-aftermath.png"
+        "DP-3, ~/primordial/wallpapers/fre/fre-aftermath.png"
         "eDP-1,~/primordial/wallpapers/fre/fre-aftermath.png"
         "DP-6, ~/primordial/wallpapers/sg.png"
         "DP-7, ~/primordial/wallpapers/art.png"
