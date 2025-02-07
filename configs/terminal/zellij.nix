@@ -7,7 +7,14 @@
 
     settings = {
 
-      simplified_ui = true;
+      on_force_close = "quit";
+      # simplified_ui = true;
+
+      ui = {
+        pane_frames = {
+          rounded_corners = "true";
+        };
+      };
       
     };
 
