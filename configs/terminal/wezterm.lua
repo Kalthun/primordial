@@ -4,6 +4,7 @@ local config = {}
 config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
 config.default_cursor_style = 'SteadyBar'
+config.audible_bell = "Disabled"
 
 config.window_padding = {
   left = 2,
@@ -13,7 +14,6 @@ config.window_padding = {
 }
 
 config.max_fps = 244
-
 config.enable_wayland = false
 
 return config
