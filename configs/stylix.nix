@@ -1,4 +1,4 @@
-{ configs, pkgs, lib, ... }: {
+{ config, pkgs, lib, ... }: {
 
   # stylix.image = ../wallpapers/kanagawa.png;
 
@@ -52,5 +52,7 @@
     transparentBackground.main = true;
     transparentBackground.signColumn = true;
   };
+
+  wayland.windowManager.hyprland.settings.general."col.active_border" = lib.mkForce "rgb(${toString config.lib.stylix.colors.base08})";
 
 }
