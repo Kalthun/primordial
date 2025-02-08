@@ -44,6 +44,8 @@
 
     nil
 
+    zoom-us
+
   ];
 
   imports = [
