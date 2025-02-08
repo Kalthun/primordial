@@ -41,7 +41,7 @@
     # package = pkgs.pokemon-cursor;
     # name = "Pokemon";
 
-    package = pkgs.gruppled-cursors;
+    package = pkgs.gruppled-black-cursors;
     name = "Gruppled Black";
     
     size = 24;
