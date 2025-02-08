@@ -46,6 +46,8 @@
 
     zoom-us
 
+    wofi
+
   ];
 
   imports = [

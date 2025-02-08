@@ -8,5 +8,6 @@
     ./hypr/hypridle.nix
 
     ./mako.nix
+    # ./wofi.nix
   ];
 }
