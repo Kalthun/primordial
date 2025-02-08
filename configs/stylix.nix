@@ -37,13 +37,13 @@
   stylix.cursor = {
     # package = pkgs.catppuccin-cursors.mochaLight;
     # name = "catppuccin-mocha-light-cursors";
-    
+
     # package = pkgs.pokemon-cursor;
     # name = "Pokemon";
 
     package = pkgs.gruppled-black-cursors;
     name = "gruppled_black";
-    
+
     size = 24;
   };
 
@@ -53,7 +53,7 @@
     transparentBackground.signColumn = true;
   };
 
-  wayland.windowManager.hyprland.settings.general."col.active_border" = lib.mkForce "rgba(${toString config.lib.stylix.colors.base0D}ee) rgba(${config.lib.stylix.colors.base0A}ee) 45deg";
-  wayland.windowManager.hyprland.settings.general."col.inactive_border" = lib.mkForce "rgba(${toString config.lib.stylix.colors.base04}aa)";
+  wayland.windowManager.hyprland.settings.general."col.active_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base0D}ee) rgba(${config.lib.stylix.colors.base0A}ee) 45deg";
+  wayland.windowManager.hyprland.settings.general."col.inactive_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base04}aa)";
 
 }
