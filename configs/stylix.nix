@@ -37,8 +37,13 @@
   stylix.cursor = {
     # package = pkgs.catppuccin-cursors.mochaLight;
     # name = "catppuccin-mocha-light-cursors";
-    package = pkgs.pokemon-cursor;
-    name = "Pokemon";
+    
+    # package = pkgs.pokemon-cursor;
+    # name = "Pokemon";
+
+    package = pkgs.gruppled-cursors;
+    name = "Gruppled Black";
+    
     size = 24;
   };
 
