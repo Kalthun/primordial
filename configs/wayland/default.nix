@@ -6,5 +6,7 @@
     # ./hypr/hyprcursor.nix
     ./hypr/hyprlock.nix
     ./hypr/hypridle.nix
+
+    ./mako.nix
   ];
 }
