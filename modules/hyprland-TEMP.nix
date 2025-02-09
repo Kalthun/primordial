@@ -42,6 +42,8 @@
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
 
       NVD_BACKEND = "direct";
+
+      MUTTER_DEBUG_KMS_THREAD_TYPE = "user";
         
     };
   };
