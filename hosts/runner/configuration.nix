@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../modules/hyprland.nix
+      ../../modules/hyprland-TEMP.nix
       ../../modules/stylix.nix
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
