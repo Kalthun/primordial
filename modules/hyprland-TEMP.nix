@@ -11,41 +11,41 @@
     wl-clipboard
   ];
 
-  # xdg.portal = {
-  #   enable = true;
-  #   extraPortals = [
-  #     pkgs.xdg-desktop-portal-gtk
-  #     pkgs.xdg-desktop-portal
-  #   ];
-  # };
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal
+    ];
+  };
 
   programs.hyprland.enable = true;
-  # programs.hyprland.xwayland.enable = true;
+  programs.hyprland.xwayland.enable = true;
 
-  # environment = {
-  #   sessionVariables = {
+  environment = {
+    sessionVariables = {
 
-  #     NIXOS_OZONE_WL = "1";
-  #     WLR_NO_HARDWARE_CURSORS = "1";
+      NIXOS_OZONE_WL = "1";
+      WLR_NO_HARDWARE_CURSORS = "1";
 
-  #     XDG_CURRENT_DESKTOP = "Hyprland";
-  #     XDG_SESSION_TYPE = "wayland";
-  #     XDG_SESSION_DESKTOP = "Hyprland";
+      XDG_CURRENT_DESKTOP = "Hyprland";
+      XDG_SESSION_TYPE = "wayland";
+      XDG_SESSION_DESKTOP = "Hyprland";
 
-  #     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-  #     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-  #     QT_QPA_PLATFORM = "wayland";
-  #     QT_QPA_PLATFORMTHEME = "qt5ct";
+      QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+      QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+      QT_QPA_PLATFORM = "wayland";
+      QT_QPA_PLATFORMTHEME = "qt5ct";
 
-  #     GDK_SCALE = "2";
+      GDK_SCALE = "2";
       
-  #     ELECTRON_OZONE_PLATFORM_HINT = "auto";
+      ELECTRON_OZONE_PLATFORM_HINT = "auto";
 
-  #     NVD_BACKEND = "direct";
+      NVD_BACKEND = "direct";
 
-  #     MUTTER_DEBUG_KMS_THREAD_TYPE = "user";
+      MUTTER_DEBUG_KMS_THREAD_TYPE = "user";
         
-  #   };
-  # };
+    };
+  };
   
 }
