@@ -4,7 +4,7 @@
 
     enable = true;
 
-    # shellIntegration.enableZshIntegration = true;
+    shellIntegration.enableZshIntegration = true;
 
     extraConfig = builtins.readFile ./kitty.conf;
 
