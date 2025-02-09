@@ -4,9 +4,14 @@
 
     enable = true;
 
-    # shellIntegration.enableZshIntegration = true;
+    shellIntegration = {
 
-    # extraConfig = builtins.readFile ./kitty.conf;
+      enableZshIntegration = true;
+      mode = "no-cursor";
+
+    };
+
+    extraConfig = builtins.readFile ./kitty.conf;
 
   };
   
