@@ -22,6 +22,8 @@
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
   
+
+  # TODO: Seperate variables that should be with specific programs
   environment = {
     sessionVariables = {
 

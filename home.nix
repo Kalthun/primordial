@@ -48,7 +48,6 @@
     pavucontrol
     vscode
     
-
   ];
 
   imports = [
