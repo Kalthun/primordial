@@ -4,7 +4,7 @@
 
     enable = true;
 
-    shellIntegeration.enableZshIntegration = true;
+    shellIntegration.enableZshIntegration = true;
     
   };
   
