@@ -12,6 +12,7 @@
       tree = "tree --dirsfirst";
       cat = "bat";
       lg = "lazygit";
+      nv = "nvim";
     };
 
     history = {
