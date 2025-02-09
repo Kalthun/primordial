@@ -5,7 +5,7 @@
     xdg-desktop-portal-hyprland
     hyprpaper
     hyprshot
-    hyprcusor
+    hyprcursor
     hyprsysteminfo
     waybar
     wl-clipboard
