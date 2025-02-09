@@ -54,9 +54,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # IMPORTANT: need this
-  programs.hyprland.enable = true;
-
   programs.thunar.enable = true;
 
   # Enable sound with pipewire.
@@ -71,7 +68,7 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
-  
+
   # Need this for zsh to work
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
