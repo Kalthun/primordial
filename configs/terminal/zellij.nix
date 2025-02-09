@@ -8,7 +8,7 @@
     settings = {
 
       on_force_close = "quit";
-      # simplified_ui = true;
+      simplified_ui = true;
 
       ui = {
         pane_frames = {
