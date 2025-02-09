@@ -7,6 +7,8 @@
 
   stylix.opacity.terminal = 0.85;
   stylix.opacity.desktop = 0.0;
+  stylix.opacity.applications = 0.85;
+  stylix.opacity.popups = 0.85;
 
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
