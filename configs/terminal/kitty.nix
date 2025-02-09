@@ -7,7 +7,7 @@
     shellIntegration = {
 
       enableZshIntegration = true;
-      mode = "no-cursor";
+      mode = "disabled";
 
     };
 
