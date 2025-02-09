@@ -59,7 +59,7 @@
   ];
 
   home.sessionVariables = {
-    EDITOR = "helix";
+    EDITOR = "nvim";
     ZELLIJ_AUTO_ATTACH = "true";
   };
 
