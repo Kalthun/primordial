@@ -19,20 +19,13 @@
   home.packages = with pkgs; [
  
     fortune
-  
-    hyprshot
-    hyprpaper
-    hyprpicker
-    hyprutils
-    hyprsunset
-    hyprlang
-    wl-clipboard
 
     eza
     bat
     tree
     fzf
     yazi
+    ripgrep
 
     lazygit
     lazydocker
@@ -43,10 +36,18 @@
     nwg-look
 
     nil
+    # Other one
 
     zoom-us
 
     wofi
+
+    # Might move later
+    discord
+    obsidian
+    pavucontrol
+    vscode
+    
 
   ];
 
