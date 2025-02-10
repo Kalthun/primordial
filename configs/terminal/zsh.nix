@@ -57,17 +57,6 @@
         esac
       }
 
-      # Fix ESC key delay issue in vi command mode
-      bindkey -M vicmd '^[' undefined-key
-
-      # Unbind ^X in vi insert mode to avoid conflicts
-      bindkey -rM viins '^X'
-
-      # Rebind multi-character bindings starting with ESC to ^X instead
-      bindkey -M viins '^X,' _history-complete-newer
-      bindkey -M viins '^X/' _history-complete-older
-      bindkey -M viins '^X`' _bash_complete-word
-
       export KEYTIMEOUT=1
     '';
 
