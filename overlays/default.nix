@@ -1,11 +1,11 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
 
   nixpkgs.overlays = [
 
     (final: prev: {
-      zjstatus = prev.zjstatus.packages.${prev.system}.default;
+      zjstatus = inputs.zjstatus.packages.${prev.system}.default;
     })
     
   ];
