@@ -28,7 +28,17 @@
         nvf,
         zjstatus,
         ...
-    } @inputs: {
+    } @inputs:
+        let
+            inherit (inputs.nixpkgs.lib) attrValues;
+
+            overlays = with inputs; [
+                (final: prev: {
+                    zjstatus = zjstatus.packages.${prev.system}.default;
+                })
+            ];
+        in
+    {
         nixosConfigurations = {
 
             seed = nixpkgs.lib.nixosSystem {

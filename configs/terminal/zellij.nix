@@ -19,6 +19,8 @@
       
     };
 
+    # xdg.configFile."zellij/layouts/default.kdl".text = builtins.readFile "";
+
   };
   
 }
