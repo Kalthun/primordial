@@ -30,7 +30,7 @@
       default_tab_template {
         children
         pane size=1 borderless=true {
-            plugin location="file:${pkgs.zjstatus}/bin/zjframes.wasm" {
+            plugin location="file://${pkgs.zjstatus}/bin/zjframes.wasm" {
             format_left   "{mode} #[fg=#89B4FA,bold]{session}"
             format_center "{tabs}"
             format_right  "{command_git_branch} {datetime}"
