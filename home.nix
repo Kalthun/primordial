@@ -65,7 +65,7 @@
     ZELLIJ_AUTO_ATTACH = "true";
 
     # LMAOOOO: fixed spotify_player in zellij + kitty
-    TERM = "tmux-256color";
+    TERM = "xterm-256color";
   };
 
   # Let Home Manager install and manage itself.
