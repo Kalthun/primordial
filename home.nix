@@ -41,7 +41,6 @@
 
     zoom-us
 
-    wofi
 
     # Might move later
     discord
