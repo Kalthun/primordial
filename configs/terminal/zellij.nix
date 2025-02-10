@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
   let
     inherit (config.lib.stylix) colors;
   in
@@ -36,7 +36,7 @@
             format_right  "{command_git_branch} {datetime}"
             format_space  ""
 
-            border_enabled  "false"
+            border_enabled  "true"
             border_char     "─"
             border_format   "#[fg=#6C7086]{char}"
             border_position "top"
@@ -56,7 +56,7 @@
 
             datetime        "#[fg=#6C7086,bold] {format} "
             datetime_format "%A, %d %b %Y %H:%M"
-            datetime_timezone "Europe/Berlin"
+            datetime_timezone "America/Toronto"
           }
         }
       }
