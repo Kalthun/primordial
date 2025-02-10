@@ -56,6 +56,7 @@
     ./configs/terminal
     ./configs/wayland
     ./configs/firefox.nix
+    ./configs/chromium.nix
     ./configs/stylix.nix
   ];
 
