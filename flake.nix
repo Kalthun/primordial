@@ -14,7 +14,7 @@
 
         stylix.url = "github:danth/stylix";
 
-        # nvf.url = "github:notashelf/nvf";
+        nvf.url = "github:notashelf/nvf";
 
         zjstatus.url = "github:dj95/zjstatus";
     };
@@ -25,7 +25,7 @@
         nixos-hardware,
         home-manager,
         stylix,
-        # nvf,
+        nvf,
         zjstatus,
         ...
     } @inputs:

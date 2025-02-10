@@ -5,7 +5,7 @@
   nixpkgs.overlays = [
 
     (final: prev: {
-      zjstatus = zjstatus.packages.${prev.system}.default;
+      zjstatus = prev.zjstatus.packages.${prev.system}.default;
     })
     
   ];
