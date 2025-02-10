@@ -22,13 +22,54 @@
 
     oh-my-zsh = {
       enable = true;
+
       plugins = [
         "git"
         "sudo"
         "vi-mode"
         "colored-man-pages"
       ];
+      
     };
+
+    # Add custom configuration lines to .zshrc
+    initExtra = ''
+      # Enable custom cursor styles for vi-mode
+      export ZVM_CURSOR_STYLE_ENABLED=true
+
+      # Define cursor styles
+      export ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK
+      export ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_BEAM
+      export ZVM_OPPEND_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
+
+      # Function to update cursor based on mode
+      function zvm_after_select_vi_mode() {
+        case $ZVM_MODE in
+          $ZVM_MODE_NORMAL)
+            echo -ne '\e[2 q'  # Block cursor
+            ;;
+          $ZVM_MODE_INSERT)
+            echo -ne '\e[6 q'  # Beam cursor
+            ;;
+          $ZVM_MODE_VISUAL)
+            echo -ne '\e[4 q'  # Underline cursor
+            ;;
+        esac
+      }
+
+      # Fix ESC key delay issue in vi command mode
+      bindkey -M vicmd '^[' undefined-key
+
+      # Unbind ^X in vi insert mode to avoid conflicts
+      bindkey -rM viins '^X'
+
+      # Rebind multi-character bindings starting with ESC to ^X instead
+      bindkey -M viins '^X,' _history-complete-newer
+      bindkey -M viins '^X/' _history-complete-older
+      bindkey -M viins '^X`' _bash_complete-word
+
+      export KEYTIMEOUT=1
+    '';
 
   };
 
