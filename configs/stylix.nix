@@ -34,7 +34,7 @@
     };
   };
 
-  stylix.fonts.sizes.terminal = 14;
+  stylix.fonts.sizes.terminal = 13;
 
   stylix.cursor = {
     # package = pkgs.catppuccin-cursors.mochaLight;
