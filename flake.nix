@@ -29,15 +29,15 @@
         zjstatus,
         ...
     } @inputs:
-        let
-            inherit (inputs.nixpkgs.lib) attrValues;
+        # let
+        #     inherit (inputs.nixpkgs.lib) attrValues;
 
-            overlays = with inputs; [
-                (final: prev: {
-                    zjstatus = zjstatus.packages.${prev.system}.default;
-                })
-            ];
-        in
+        #     overlays = with inputs; [
+        #         (final: prev: {
+        #             zjstatus = zjstatus.packages.${prev.system}.default;
+        #         })
+        #     ];
+        # in
     {
         nixosConfigurations = {
 
