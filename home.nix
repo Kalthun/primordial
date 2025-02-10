@@ -32,6 +32,7 @@
 
     spotify-player
     playerctl
+    brightnessctl
 
     nwg-look
 

@@ -7,7 +7,7 @@
 
     settings = {
 
-      on_force_close = "quit";
+      on_force_close = "detach";
       simplified_ui = true;
 
       ui = {
