@@ -14,7 +14,7 @@
 
         stylix.url = "github:danth/stylix";
 
-        nvf.url = "github:notashelf/nvf";
+        # nvf.url = "github:notashelf/nvf";
 
         zjstatus.url = "github:dj95/zjstatus";
     };
@@ -25,19 +25,13 @@
         nixos-hardware,
         home-manager,
         stylix,
-        nvf,
+        # nvf,
         zjstatus,
         ...
     } @inputs:
-        let
-            inherit (inputs.nixpkgs.lib) attrValues;
+        # let
 
-            overlays = with inputs; [
-                (final: prev: {
-                    zjstatus = zjstatus.packages.${prev.system}.default;
-                })  
-            ];
-        in
+        # in
     {
         nixosConfigurations = {
 
@@ -45,6 +39,7 @@
                 specialArgs = { inherit inputs; };
                 modules = [
                     ./hosts/seed/configuration.nix
+                    (import ./overlays)
                     home-manager.nixosModules.home-manager {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
@@ -60,6 +55,7 @@
                 specialArgs = { inherit inputs; };
                 modules = [
                     ./hosts/runner/configuration.nix
+                    (import ./overlays)
                     home-manager.nixosModules.home-manager {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
@@ -75,6 +71,7 @@
                 specialArgs = { inherit inputs; };
                 modules = [
                     ./hosts/pillar/configuration.nix
+                    (import ./overlays)
                     home-manager.nixosModules.home-manager {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
