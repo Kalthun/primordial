@@ -42,8 +42,8 @@ style = 'bold yellow'
 
 [character]
 success_symbol = '[\$](white)'
-error_symbol = '[ ](bold red)'
-vimcmd_symbol = '[|](bold blue)'
+error_symbol = '[](bold red)'
+vimcmd_symbol = '[󰘧](white)'
 
 [directory]
 truncation_length = 0
