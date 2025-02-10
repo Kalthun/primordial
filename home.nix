@@ -30,7 +30,6 @@
     lazygit
     lazydocker
 
-    spotify-player
     playerctl
     brightnessctl
 
