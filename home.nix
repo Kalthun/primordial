@@ -56,6 +56,7 @@
     ./configs/firefox.nix
     ./configs/chromium.nix
     ./configs/stylix.nix
+    ./configs/spotify-player.nix
   ];
 
   home.sessionVariables = {
