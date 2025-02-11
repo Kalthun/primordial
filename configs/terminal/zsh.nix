@@ -13,6 +13,7 @@
       cat = "bat";
       lg = "lazygit";
       nv = "nvim";
+      zj = "zellij";
     };
 
     history = {
