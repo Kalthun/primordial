@@ -72,7 +72,7 @@
             border_format   "#[fg=#6C7086]{char}"
             border_position "top"
 
-            mode_normal        "#[bg=#${colors.base0D},fg=#${colors.base01},bold] NORMAL "
+            mode_normal        "#[bg=#${colors.base03},fg=#${colors.base05},bold] NORMAL "
             mode_locked        "#[bg=#${colors.base08},fg=#${colors.base01},bold]   ED "
             mode_resize        "#[bg=#${colors.base09},fg=#${colors.base01},bold] RESIZE "
             mode_pane          "#[bg=#${colors.base0E},fg=#${colors.base01},bold]  PANE  "
