@@ -65,14 +65,16 @@
         SESSION_NAME="DEF"
         SESSION_LIST=$(zellij list-sessions)
 
-        if echo "$SESSION_LIST" | grep -E "^$SESSION_NAME\s+.*exited" > /dev/null; then
-          zellij delete-session "$SESSION_NAME"
+        if echo "$SESSION_LIST" | sed 's/\x1B\[[0-9;]*m//g' | rg -q "^$SESSION_NAME.*\bEXITED\b"; then
+          zellij delete-session "DEF"
         fi
-        
-        if zellij list-sessions --short | grep -q "^$SESSION_NAME$"; then
-          zellij attach "$SESSION_NAME"
+
+        SESSION_LIST=$(zellij list-sessions --short)
+
+        if echo "$SESSION_LIST" | rg -q "$SESSION_NAME"; then
+          zellij attach "DEF"
         else
-          zellij --session "$SESSION_NAME"
+          zellij --session "DEF"
         fi
 
       fi
