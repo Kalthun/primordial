@@ -33,11 +33,11 @@
   xdg.configFile."zellij/layouts/default.kdl".text = ''
     layout {
 
-      tab name="main" hide_floating_panes=true {
+      tab name="main" {
         pane name="main"
       }
     
-      tab name="Music" hide_floating_panes=true {
+      tab name="Music" {
         pane name="Spotify" command="spotify_player"
       }
 
