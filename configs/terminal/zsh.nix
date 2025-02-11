@@ -60,6 +60,22 @@
       export KEYTIMEOUT=1
 
 
+      if [[ -z $ZELLIJ ]]; then
+
+        SESSION_NAME="DEF"
+        SESSION_LIST=$(zellij list-sessions)
+
+        if echo "$SESSION_LIST" | grep -E "^$SESSION_NAME\s+.*exited" > /dev/null; then
+          zellij delete-session "$SESSION_NAME"
+        fi
+        
+        if zellij list-sessions --short | grep -q "^$SESSION_NAME$"; then
+          zellij attach "$SESSION_NAME"
+        else
+          zellij --session "$SESSION_NAME"
+        fi
+
+      fi
       
     '';
 
