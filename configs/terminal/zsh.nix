@@ -58,6 +58,8 @@
       }
 
       export KEYTIMEOUT=1
+
+      
     '';
 
   };

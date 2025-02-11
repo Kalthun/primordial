@@ -27,6 +27,7 @@
     fzf
     yazi
     ripgrep
+    skim
 
     lazygit
     lazydocker
