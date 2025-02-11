@@ -32,6 +32,15 @@
   
   xdg.configFile."zellij/layouts/default.kdl".text = ''
     layout {
+
+      tab name="main" hide_floating_panes=true {
+        pane name="main"
+      }
+    
+      tab name="Music" hide_floating_panes=true {
+        pane name="Spotify" command="spotify_player"
+      }
+
       default_tab_template {
         children
         pane size=1 borderless=true {
@@ -50,7 +59,7 @@
 
             format_left   "{mode}#[bg=#${colors.base00}] {tabs}"
             format_center ""
-            format_right  "#[bg=#${colors.base00},fg=#${colors.base0F}]#[bg=#${colors.base0F},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0F}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {session} #[bg=#${colors.base00},fg=#${colors.base03}]  #[bg=#${colors.base00},fg=#${colors.base0E}]#[bg=#${colors.base0E},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0E}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {command_user}@{command_host} #[bg=#${colors.base00},fg=#${colors.base03}]" 
+            format_right  "#[bg=#${colors.base00},fg=#${colors.base0F}]#[bg=#${colors.base0F},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0F}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {session}#[bg=#${colors.base00},fg=#${colors.base03}] #[bg=#${colors.base00},fg=#${colors.base0E}]#[bg=#${colors.base0E},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0E}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {command_user}@{command_host}#[bg=#${colors.base00},fg=#${colors.base03}]" 
 
             format_space  ""
             format_hide_on_overlength "true"
@@ -92,9 +101,9 @@
             tab_separator           "#[bg=#${colors.base00}] "
 
             // indicators
-            tab_sync_indicator       " "
-            tab_fullscreen_indicator " 󰊓"
-            tab_floating_indicator   " 󰹙"
+            tab_sync_indicator       "  "
+            tab_fullscreen_indicator "  "
+            tab_floating_indicator   "  "
 
             tab_display_count "3"
             tab_truncate_start_format "#[fg=#${colors.base05},bg=#${colors.base00}]< "
