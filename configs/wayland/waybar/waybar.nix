@@ -88,13 +88,13 @@
         on-scroll-down = "pamixer -d 5";
         scroll-step = 5;
         format-icons = {
-          headphone = "";
-          hands-free = "";
-          headset = "";
-          phone = "";
-          portable = "";
-          car = "";
-          default = [ "" "" "" ];
+          headphone = " ";
+          hands-free = " ";
+          headset = " ";
+          phone = " ";
+          portable = " ";
+          car = " ";
+          default = [ "" " " " " ];
         };
       };
       "pulseaudio#microphone" = {

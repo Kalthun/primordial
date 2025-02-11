@@ -37,7 +37,7 @@
         pane name="main"
       }
     
-      tab name="Music" {
+      tab name=" " {
         pane name="Spotify" command="spotify_player"
       }
 

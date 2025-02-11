@@ -63,7 +63,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-    ZELLIJ_AUTO_ATTACH = "true";
+    # ZELLIJ_AUTO_ATTACH = "true";
 
     # LMAOOOO: fixed spotify_player in zellij + kitty
     TERM = "xterm-256color";
