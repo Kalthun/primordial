@@ -58,7 +58,6 @@
       }
 
       export KEYTIMEOUT=1
-
       
     '';
 
