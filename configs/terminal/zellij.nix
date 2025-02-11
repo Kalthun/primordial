@@ -50,7 +50,7 @@
 
             format_left   "{mode}#[bg=#${colors.base00}] {tabs}"
             format_center ""
-            format_right  "#[bg=#${colors.base00},fg=#${colors.base0F}]#[bg=#${colors.base0F},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0F}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {session} #[bg=#${colors.base03},fg=#${colors.base0E}]#[bg=#${colors.base0E},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0E}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {command_user}@{command_host} " 
+            format_right  "#[bg=#${colors.base00},fg=#${colors.base0F}]#[bg=#${colors.base0F},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0F}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {session} #[bg=#${colors.base00},fg=#${colors.base03}]  #[bg=#${colors.base00},fg=#${colors.base0E}]#[bg=#${colors.base0E},fg=#${colors.base01},bold] #[bg=#${colors.base03},fg=#${colors.base0E}]#[bg=#${colors.base03},fg=#${colors.base05},bold] {command_user}@{command_host} #[bg=#${colors.base00},fg=#${colors.base03}]" 
 
             format_space  ""
             format_hide_on_overlength "true"
