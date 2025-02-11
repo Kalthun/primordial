@@ -6,7 +6,7 @@
 
     shellIntegration = {
 
-      enableZshIntegration = true;
+      # enableZshIntegration = true;
 
     };
 
