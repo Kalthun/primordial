@@ -63,7 +63,6 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-    # NVIM = "1";
 
     # LMAOOOO: fixed spotify_player in zellij + kitty
     TERM = "xterm-256color";
