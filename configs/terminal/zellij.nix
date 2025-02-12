@@ -34,11 +34,11 @@
       }
 
       tab name=" " {
-        pane name=" " command="cd" { args "run" }
+        pane name=" " command="yazi"
       }
     
       tab name=" " {
-        pane name="Spotify" command="spotify_player"
+        pane name="Spotify" command="spotify_player" close_on_exit=true
       }
 
       default_tab_template {
