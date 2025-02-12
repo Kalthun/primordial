@@ -29,16 +29,16 @@
   xdg.configFile."zellij/layouts/default.kdl".text = ''
     layout {
 
-      tab name=" " {
-        pane name=" "
+      tab name=" " {
+        pane name=" "
       }
 
-      tab name=" " {
-        pane name=" " command="yazi"
+      tab name="" {
+        pane name="󰪶" command="yazi" close_on_exit=false
       }
     
       tab name=" " {
-        pane name="Spotify" command="spotify_player" close_on_exit=true
+        pane name="Spotify" command="spotify_player" close_on_exit=false
       }
 
       default_tab_template {
