@@ -10,5 +10,6 @@
     ./helix.nix
     ./nvf.nix
     ./git.nix
+    ./yazi.nix
   ];
 }

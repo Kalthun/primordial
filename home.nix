@@ -25,7 +25,6 @@
     bat
     tree
     fzf
-    yazi
     ripgrep
     skim
     ueberzugpp
