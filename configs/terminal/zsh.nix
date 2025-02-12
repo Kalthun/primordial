@@ -14,7 +14,6 @@
       lg = "lazygit";
       nv = "nvim";
       zj = "zellij";
-      lr = "g++ main.cpp -o output -lGL -lGLEW -lglfw && ./output";
     };
 
     history = {
