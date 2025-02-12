@@ -33,8 +33,8 @@
         pane name=" "
       }
 
-      tab name="" {
-        pane name="󰪶" command="yazi" close_on_exit=false
+      tab name="󱃣 " {
+        pane name="󱃣 " command="yazi" close_on_exit=false
       }
     
       tab name=" " {
