@@ -28,6 +28,7 @@
     ripgrep
     skim
     ueberzugpp
+    unzip
 
     lazygit
     lazydocker
