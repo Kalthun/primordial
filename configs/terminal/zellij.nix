@@ -25,16 +25,16 @@
     };
 
   };
-
-  # TODO:
-  # - SESSION:
-  # - MODE-COLORS:
-  
+ 
   xdg.configFile."zellij/layouts/default.kdl".text = ''
     layout {
 
-      tab name="main" {
-        pane name="main"
+      tab name=" " {
+        pane name=" "
+      }
+
+      tab name=" " {
+        pane name=" "
       }
     
       tab name=" " {
