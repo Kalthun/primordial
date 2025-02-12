@@ -56,6 +56,7 @@
   imports = [
     inputs.nvf.homeManagerModules.default
     ./configs/terminal
+    ./configs/direnv.nix
     ./configs/wayland
     ./configs/firefox.nix
     ./configs/chromium.nix
