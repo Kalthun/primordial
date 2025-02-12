@@ -13,7 +13,7 @@
 
       on_force_close = "detach";
       simplified_ui = true;
-      pane_frames = true;
+      pane_frames = false;
     
       ui = {
         pane_frames = {
@@ -65,7 +65,8 @@
             format_hide_on_overlength "true"
             format_precedence "lrc"
 
-            hide_frame_for_single_pane "true"
+            # Bugged
+            # hide_frame_for_single_pane "true"
 
             border_enabled  "false"
             border_char     "─"
