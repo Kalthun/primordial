@@ -65,8 +65,8 @@
             format_hide_on_overlength "true"
             format_precedence "lrc"
 
-            # Bugged
-            # hide_frame_for_single_pane "true"
+            // Bugged
+            // hide_frame_for_single_pane "true"
 
             border_enabled  "false"
             border_char     "─"
