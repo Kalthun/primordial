@@ -13,5 +13,5 @@
     extraConfig = builtins.readFile ./kitty.conf;
 
   };
-  
+
 }

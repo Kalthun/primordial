@@ -3,7 +3,7 @@
   programs.chromium = {
 
     enable = true;
-    
+
   };
-  
+
 }

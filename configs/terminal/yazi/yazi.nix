@@ -5,7 +5,7 @@
     enableZshIntegration = true;
 
     settings = {
-      
+
       preview = {
         image_delay = 0;
         ueberzug_offset = [
@@ -14,8 +14,8 @@
         0
         0
         ];
-      };     
-      
+      };
+
     };
   };
 }

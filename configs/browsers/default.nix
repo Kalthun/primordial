@@ -3,6 +3,6 @@
 
     ./firefox.nix
     ./chromium.nix
-    
+
   ];
 }

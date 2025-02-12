@@ -9,7 +9,7 @@
         # "hyprctl setcursor catppuccin-mocha-light-cursors 48"
         # "hyprctl setcursor Pokemon 36"
       ];
-      
+
     };
 
   };

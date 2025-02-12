@@ -30,7 +30,7 @@
         "vi-mode"
         "colored-man-pages"
       ];
-      
+
     };
 
     # Add custom configuration lines to .zshrc
@@ -90,7 +90,7 @@
 
         g++ "$filename".cpp -o output -lGL -lGLEW -lglfw && ./output
       }
-      
+
     '';
 
   };

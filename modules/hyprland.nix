@@ -21,7 +21,7 @@
 
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
-  
+
 
   # TODO: Seperate variables that should be with specific programs
   environment = {
@@ -47,7 +47,7 @@
       QT_QPA_PLATFORMTHEME = "qt5ct";
 
       GDK_SCALE = "2";
-      
+
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
 
       NVD_BACKEND = "direct";

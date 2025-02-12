@@ -17,7 +17,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
- 
+
     fortune
     fastfetch
 
@@ -50,7 +50,7 @@
     obsidian
     pavucontrol
     vscode
-    
+
   ];
 
   imports = [

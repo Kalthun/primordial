@@ -42,10 +42,10 @@
         #     extraSpecialArgs = { inherit inputs; };
 
         #     users = {
-        #       "kalthun" = import ./home.nix;  
+        #       "kalthun" = import ./home.nix;
         #     };
         # };
-        
+
         nixosConfigurations = {
 
             seed = nixpkgs.lib.nixosSystem {

@@ -23,9 +23,9 @@
           lctl lmet lalt           spc            ralt rmet rctl
         )
       '';
-      
+
     };
-    
+
   };
-  
+
 }

@@ -5,10 +5,10 @@
 
     ./terminal
     ./wayland
-    ./browsers    
+    ./browsers
 
     ./stylix.nix
     ./direnv.nix
-    
+
   ];
 }

@@ -19,7 +19,7 @@
     # Editors
     ./helix/helix.nix
     ./nvf.nix
-    
+
     # File Managers
     ./yazi/yazi.nix
 
@@ -27,6 +27,6 @@
     ./spotify-player/spotify-player.nix
 
     # Tools
-    
+
   ];
 }
