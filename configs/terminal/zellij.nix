@@ -13,7 +13,7 @@
 
       on_force_close = "detach";
       simplified_ui = true;
-      pane_frames = false;
+      pane_frames = true;
     
       ui = {
         pane_frames = {
