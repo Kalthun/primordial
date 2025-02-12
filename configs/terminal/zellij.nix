@@ -34,7 +34,7 @@
       }
 
       tab name=" " {
-        pane name=" "
+        pane name=" " command="cd primordial"
       }
     
       tab name=" " {
