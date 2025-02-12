@@ -28,6 +28,7 @@
     yazi
     ripgrep
     skim
+    ueberzugpp
 
     lazygit
     lazydocker
@@ -63,7 +64,8 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-    # ZELLIJ_AUTO_ATTACH = "true";
+    # NVIM = "1";
+    # NVIM_LOG_FILE="1";
 
     # LMAOOOO: fixed spotify_player in zellij + kitty
     TERM = "xterm-256color";
