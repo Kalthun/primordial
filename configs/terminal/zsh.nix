@@ -79,6 +79,17 @@
         fi
 
       fi
+
+      # Lazyrun for cpp OpenGL
+      function lrc () {
+        if [[ -n "$1" ]]; then
+          filename="$*"
+        else
+          filename="main"
+        fi
+
+        g++ "$filename".cpp -o output -lGL -lGLEW -lglfw && ./output
+      }
       
     '';
 
