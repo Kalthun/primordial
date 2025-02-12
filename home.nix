@@ -29,6 +29,7 @@
     skim
     ueberzugpp
     unzip
+    zip
 
     lazygit
     lazydocker
