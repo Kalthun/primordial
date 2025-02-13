@@ -1,6 +1,10 @@
-{ config, pkgs, lib, inputs, ... }:
-
 {
+  config,
+  pkgs,
+  lib,
+  inputs,
+  ...
+}: {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "kalthun";
@@ -17,7 +21,6 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-
     fortune
     fastfetch
 
@@ -44,13 +47,12 @@
 
     zoom-us
 
-
     # Might move later
     discord
     obsidian
     pavucontrol
     vscode
-
+    blender-hip
   ];
 
   imports = [
