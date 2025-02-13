@@ -52,7 +52,6 @@
     obsidian
     pavucontrol
     vscode
-    blender-hip
   ];
 
   imports = [
