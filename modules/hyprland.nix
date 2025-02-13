@@ -3,9 +3,10 @@
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    hyprpaper
+    # hyprpaper
     hyprshot
-    hyprcursor
+    # hyprcursor
+    hyprsunset
     hyprsysteminfo
     waybar
     wl-clipboard
