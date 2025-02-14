@@ -65,6 +65,7 @@
           enable = true;
 
           context = {
+            enable = true;
             setupOpts = {
               max_lines = 1;
             };
