@@ -1,5 +1,5 @@
 {
-  probgrams.btop= {
+  programs.btop= {
     enable = true;
   };
 }
