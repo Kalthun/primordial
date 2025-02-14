@@ -27,7 +27,6 @@
         autocomplete.nvim-cmp.enable = true;
 
         languages = {
-
           enableLSP = true;
           enableTreesitter = true;
 
@@ -55,14 +54,13 @@
         };
 
         options = {
-
-          # Defaults
+          # Default indentation settings
           tabstop = 4;
           shiftwidth = 4;
           expandtab = true;
 
-          per_filetype = {
-
+          # Language-specific settings
+          filetype = {
             nix = {
               tabstop = 2;
               shiftwidth = 2;
