@@ -22,9 +22,12 @@
           transparent = true;
         };
 
+        spellcheck.enable = true;
+        autopairs.nvim-autopairs.enable = true;
+        autocomplete.nvim-cmp.enable = true;
+
         statusline.lualine.enable = true;
         telescope.enable = true;
-        autocomplete.nvim-cmp.enable = true;
 
         languages = {
           enableLSP = true;
@@ -32,23 +35,23 @@
 
           nix = {
             enable = true;
-            treesitter.enable = true;
+          };
+
+          markdown = {
+            enable = true;
           };
 
           python = {
             enable = true;
-            treesitter.enable = true;
           };
 
           clang = {
             enable = true;
             cHeader = true;
-            treesitter.enable = true;
           };
 
           rust = {
             enable = true;
-            treesitter.enable = true;
           };
 
         };
@@ -56,9 +59,26 @@
         options = {
           # Default indentation settings
           tabstop = 4;
-          shiftwidth = 4;
+          shiftwidth = 0;
           expandtab = true;
+          wrap = true;
+          autoindent = true;
 
+        };
+
+        visuals = {
+          nvim-scrollbar.enable = true;
+          nvim-cursorline.enable = true;
+          cinnamon-nvim.enable = true; # DESC: Scrolls nicely
+          highlight-undo.enable = true;
+
+          indent-blankline = {
+            enable = true;
+            setupOpts.indent = {
+              smart_indent_cap = true;
+            };
+          };
+          
         };
 
         treesitter = {
@@ -79,7 +99,6 @@
       };
 
     };
-
-  };
+};
 
 }
