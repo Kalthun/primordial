@@ -58,7 +58,7 @@
           enable = true;
           context.enable = true;
           fold = true;
-          hightlight.enable = true;
+          highlight.enable = true;
           indent.enable = true;
         };
 
