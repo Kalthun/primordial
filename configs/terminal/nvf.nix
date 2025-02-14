@@ -56,18 +56,37 @@
 
         treesitter = {
           enable = true;
-          context.enable = true;
+
+          context = {
+            setupOpts = {
+              max_lines = 1;
+            };
+          };
+
           fold = true;
           highlight.enable = true;
           indent.enable = true;
         };
 
-        # extraConfig = ''
-        #   augroup NixFileType
-        #     autocmd!
-        #     autocmd FileType nix setlocal tabstop=2 shiftwidth=2 expandtab
-        #   augroup END
-        # '';
+        extraConfig = ''
+          " Set tab settings for different languages
+          augroup LanguageSpecificTabs
+            autocmd!
+            
+            " Nix: 2-space indentation
+            autocmd FileType nix setlocal tabstop=2 shiftwidth=2 expandtab
+            
+            " C/C++: 4-space indentation, no expandtab
+            autocmd FileType c,cpp setlocal tabstop=4 shiftwidth=4 noexpandtab
+            
+            " Python: 4-space indentation, uses spaces instead of tabs
+            autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
+            
+            " Rust: 4-space indentation, uses spaces instead of tabs
+            autocmd FileType rust setlocal tabstop=4 shiftwidth=4 expandtab
+          augroup END
+        '';
+
       };
 
     };
