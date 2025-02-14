@@ -66,9 +66,9 @@
       transparentBackground.signColumn = true;
     };
 
-    wayland.windowManager.hyprland.settings.general."col.active_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base0D}ff) rgba(${config.lib.stylix.colors.base08}ff) 45deg";
-    wayland.windowManager.hyprland.settings.general."col.inactive_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base04}aa)";
-
   };
+
+  wayland.windowManager.hyprland.settings.general."col.active_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base0D}ff) rgba(${config.lib.stylix.colors.base08}ff) 45deg";
+  wayland.windowManager.hyprland.settings.general."col.inactive_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base04}aa)";
 
 }
