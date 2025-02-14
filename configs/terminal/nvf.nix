@@ -36,10 +36,10 @@
               tabstop = 2;
               shiftwidth = 2;
               # TODO: Lookup others
-            }
-          }
+            };
+          };
 
-        }
+        };
 
       };
 
