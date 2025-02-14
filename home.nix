@@ -30,7 +30,9 @@
     fzf
     ripgrep
     skim
+
     ueberzugpp
+
     unzip
     zip
 
@@ -45,7 +47,7 @@
     nil
     # Other one
 
-    zoom-us
+    zoom-us # FIX
 
     # Might move later
     discord
