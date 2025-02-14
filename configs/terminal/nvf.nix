@@ -27,20 +27,47 @@
         autocomplete.nvim-cmp.enable = true;
 
         languages = {
+
           enableLSP = true;
           enableTreesitter = true;
 
           nix = {
             enable = true;
-            tabSettings = {
-              tabstop = 2;
-              shiftwidth = 2;
-              # TODO: Lookup others
-            };
+            treesitter.enable = true;
+          };
+
+          python = {
+            enable = true;
+            treesitter.enable = true;
+          };
+
+          clang = {
+            enable = true;
+            cHeader = true;
+            treesitter.enable = true;
+          };
+
+          rust = {
+            enable = true;
+            treesitter.enable = true;
           };
 
         };
 
+        treesitter = {
+          enable = true;
+          context.enable = true;
+          fold = true;
+          hightlight.enable = true;
+          indent.enable = true;
+        };
+
+        # extraConfig = ''
+        #   augroup NixFileType
+        #     autocmd!
+        #     autocmd FileType nix setlocal tabstop=2 shiftwidth=2 expandtab
+        #   augroup END
+        # '';
       };
 
     };
