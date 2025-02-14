@@ -27,6 +27,7 @@
     ./spotify-player/spotify-player.nix
 
     # Tools
+    ./btop/btop.nix
 
   ];
 }
