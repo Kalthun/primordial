@@ -63,7 +63,7 @@
           expandtab = true;
           wrap = true;
           autoindent = true;
-
+          cmdheight = 0;
         };
 
         visuals = {
