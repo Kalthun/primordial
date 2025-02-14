@@ -99,7 +99,7 @@
           filename="main"
         fi
 
-        g++ "$filename".cpp -o output $(pkg-config --cflags --libs opencv4)
+        g++ "$filename".cpp -o output $(pkg-config --cflags --libs opencv4) && ./output
       }
 
      '';
