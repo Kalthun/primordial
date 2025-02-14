@@ -81,7 +81,7 @@
       fi
 
       # Lazyrun for cpp OpenGL
-      function lrc () {
+      function ogl () {
         if [[ -n "$1" ]]; then
           filename="$*"
         else
@@ -91,7 +91,18 @@
         g++ "$filename".cpp -o output -lGL -lGLEW -lglfw && ./output
       }
 
-    '';
+      # Lazyrun for cpp OpenCV
+      function ocv () {
+        if [[ -n "1" ]]; then
+          filename="$*"
+        else
+          filename="main"
+        fi
+
+        g++ "$filename".cpp -o output $(pkg-config --cflags --libs opencv4)
+      }
+
+     '';
 
   };
 

@@ -71,6 +71,7 @@
       network = {
         format = "󰖩 {essid}";
         format-disconnected = "󰖪 disconnected";
+        # Applet/manager
       };
       # TODO: click opens calendar?
       clock = {
