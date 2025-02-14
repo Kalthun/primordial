@@ -66,6 +66,8 @@
           cmdheight = 0;
         };
 
+        comments.comment-nvim.enable = true;
+
         git = {
           enable = true;
           gitsigns.enable = true;
