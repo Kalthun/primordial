@@ -66,6 +66,12 @@
           cmdheight = 0;
         };
 
+        git = {
+          enable = true;
+          gitsigns.enable = true;
+          gitsigns.codeActions.enable = false; # ERR message
+        };
+
         visuals = {
           nvim-scrollbar.enable = true;
           nvim-cursorline.enable = true;
