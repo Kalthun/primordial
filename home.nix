@@ -20,6 +20,8 @@
   # changes in each release.
   home.stateVersion = "24.11";
 
+  fonts.fontconfig.enable = true;
+
   home.packages = with pkgs; [
     fortune
     fastfetch
@@ -56,6 +58,10 @@
     vscode
 
     blender
+
+
+    # Fonts
+    nerd-fonts.caskaydia-cove
   ];
 
   imports = [
