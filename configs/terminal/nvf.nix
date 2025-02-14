@@ -59,40 +59,6 @@
           shiftwidth = 4;
           expandtab = true;
 
-          # Language-specific settings
-          filetype = {
-            nix = {
-              tabstop = 2;
-              shiftwidth = 2;
-              expandtab = true;
-            };
-
-            python = {
-              tabstop = 4;
-              shiftwidth = 4;
-              expandtab = true;
-            };
-
-            rust = {
-              tabstop = 4;
-              shiftwidth = 4;
-              expandtab = true;
-            };
-
-            cpp = {
-              tabstop = 4;
-              shiftwidth = 4;
-              expandtab = true;
-            };
-
-            c = {
-              tabstop = 4;
-              shiftwidth = 4;
-              expandtab = true;
-            };
-
-          };
-
         };
 
         treesitter = {
