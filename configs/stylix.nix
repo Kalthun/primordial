@@ -34,6 +34,8 @@
     };
   };
 
+  stylix.iconTheme.enable = true;
+
   stylix.fonts.sizes.terminal = 13;
 
   stylix.cursor = {
