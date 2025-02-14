@@ -52,6 +52,8 @@
     obsidian
     pavucontrol
     vscode
+
+    blender
   ];
 
   imports = [
