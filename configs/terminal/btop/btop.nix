@@ -1,0 +1,5 @@
+{
+  probgrams.btop= {
+    enable = true;
+  };
+}
