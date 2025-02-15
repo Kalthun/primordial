@@ -11,6 +11,9 @@
 
       vim = {
 
+        viAlias = true;
+        vimAlias = true;
+
         # Use Stylix Colors
         theme = {
           enable = true;
@@ -30,12 +33,13 @@
           enable = true;
           
           refresh = {
-            statusline = 10000;
-            tabline = 10000;
+            statusline = 100;
+            tabline = 100;
           };
         };
 
         telescope.enable = true;
+        nvim-notify.enable = true;
 
         languages = {
           enableLSP = true;
