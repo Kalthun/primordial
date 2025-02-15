@@ -39,7 +39,7 @@
         };
 
         telescope.enable = true;
-        nvim-notify.enable = true;
+        notify.nvim-notify.enable = true;
 
         languages = {
           enableLSP = true;
@@ -115,6 +115,27 @@
           highlight.enable = true;
           indent.enable = true;
         };
+
+        luaConfigRC.myconfig = /* lua */ ''
+          local tab_settings = {  
+            nix = { tabstop = 2 },
+            markdown = { tabstop = 4 },
+            python = { tabstop = 4 },
+            clang = { tabstop = 4 },
+            rust = { tabstop = 4 },
+          }
+
+          for filetype, settings in pairs(tab_settings) do
+            vim.api.nvim_create_autocmd("FileType", {
+              pattern = filetype,
+              callback = function()
+                for option, value in pairs(settings) do
+                  vim.bo[option] = value
+                end
+              end
+            })
+          end
+        '';
 
       };
 
