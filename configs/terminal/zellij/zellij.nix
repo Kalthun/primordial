@@ -42,7 +42,7 @@
       }
 
       tab name="󰄨 " {
-        pand name="btop" command="btop" close_on_exit=false
+        pane and name="btop" command="btop" close_on_exit=false
       }
 
       default_tab_template {
