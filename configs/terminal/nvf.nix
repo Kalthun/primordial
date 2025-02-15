@@ -28,10 +28,11 @@
         spellcheck.enable = true;
         autopairs.nvim-autopairs.enable = true;
         autocomplete.nvim-cmp.enable = true;
+        snippets.luasnip.enable = true;
 
         statusline.lualine = {
           enable = true;
-          
+
           refresh = {
             statusline = 100;
             tabline = 100;
@@ -98,7 +99,7 @@
               smart_indent_cap = true;
             };
           };
-          
+
         };
 
         treesitter = {
@@ -117,7 +118,7 @@
         };
 
         luaConfigRC.myconfig = /* lua */ ''
-          local tab_settings = {  
+          local tab_settings = {
             nix = { tabstop = 2 },
             markdown = { tabstop = 4 },
             python = { tabstop = 4 },
@@ -137,6 +138,36 @@
           end
         '';
 
+      };
+
+      vim.lazy.plugins = {
+        "tabout.nvim" = {
+          package = pkgs.vimPlugins.tabout-nvim;
+          setupModule = "tabout";
+          setupOpts = {
+            tabkey = "<Tab>";  # Key to trigger tabout
+            backwards_tabkey = "<S-Tab>";  # Key to go backwards
+            act_as_tab = true;  # Shift content if tab out is not possible
+            act_as_shift_tab = false;  # Reverse shift content if tab out is not possible
+            default_tab = "<C-t>";  # Default tab action
+            default_shift_tab = "<C-d>";  # Reverse shift default action
+            enable_backwards = true;
+            completion = false;  # If tabkey is used in completion popup
+            tabouts = [
+              { open = "\""; close = "\""; }
+              { open = "'"; close = "'"; }
+              { open = "`"; close = "`"; }
+              { open = "{"; close = "}"; }
+              { open = "["; close = "]"; }
+              { open = "("; close = ")"; }
+            ];
+            ignore_beginning = true;
+            exclude = [ ];  # Filetypes to exclude
+          }; 
+
+          event = [ "InsertCharPre" ];  # Lazy-load on insert event
+          priority = 1000;
+        };
       };
 
     };
