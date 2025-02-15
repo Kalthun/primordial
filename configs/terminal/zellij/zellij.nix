@@ -30,15 +30,19 @@
     layout {
 
       tab name=" " {
-        pane name=" "
+        pane name="DEF"
       }
 
       tab name="󱃣 " {
-        pane name="󱃣 " command="yazi" close_on_exit=false
+        pane name="yazi" command="yazi" close_on_exit=false
       }
 
       tab name=" " {
         pane name="Spotify" command="spotify_player" close_on_exit=false
+      }
+
+      tab name="󰄨 " {
+        pand name="btop" command="btop" close_on_exit=false
       }
 
       default_tab_template {
