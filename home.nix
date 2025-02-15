@@ -49,8 +49,6 @@
     nil
     # Other one
 
-    zoom-us # FIX
-
     # Might move later
     discord
     obsidian
