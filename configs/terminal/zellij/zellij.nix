@@ -42,7 +42,7 @@
       }
 
       tab name="󰄨 " {
-        pane and name="btop" command="btop" close_on_exit=false
+        pane name="btop" command="btop" close_on_exit=false
       }
 
       default_tab_template {
