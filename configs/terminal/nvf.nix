@@ -26,7 +26,15 @@
         autopairs.nvim-autopairs.enable = true;
         autocomplete.nvim-cmp.enable = true;
 
-        statusline.lualine.enable = true;
+        statusline.lualine = {
+          enable = true;
+          
+          refresh = {
+            statusline = 10000;
+            tabline = 10000;
+          };
+        };
+
         telescope.enable = true;
 
         languages = {
@@ -95,7 +103,7 @@
           context = {
             enable = true;
             setupOpts = {
-              max_lines = 1;
+              max_lines = 2;
             };
           };
 
@@ -107,6 +115,7 @@
       };
 
     };
-};
+
+  };
 
 }
