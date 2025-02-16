@@ -54,6 +54,7 @@
 
     blender
     obs-studio
+    vlc
 
 
     # Fonts
