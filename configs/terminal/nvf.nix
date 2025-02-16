@@ -40,17 +40,9 @@
 
         spellcheck.enable = true;
         autopairs.nvim-autopairs.enable = true;
-        
-        autocomplete.nvim-cmp = {
-          enable = true;
-          mappings = {
-            complete = null;
-            confirm = "<Tab>";
-            next = "<S-Tab>";
-            previous = null;
-          };
-        };
 
+        autocomplete.nvim-cmp.enable = true;
+        
         snippets.luasnip.enable = true;
 
         statusline.lualine = {
@@ -175,7 +167,7 @@
             default_tab = "<C-t>";  # Default tab action
             default_shift_tab = "<C-d>";  # Reverse shift default action
             enable_backwards = true;
-            completion = false;  # If tabkey is used in completion popup
+            completion = true;  # If tabkey is used in completion popup
             tabouts = [
               { open = "\""; close = "\""; }
               { open = "'"; close = "'"; }
