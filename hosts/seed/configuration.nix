@@ -8,12 +8,11 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      # ../../modules/nvidia.nix
-      # ../../modules/hyprland.nix
+      ../../modules/nvidia.nix
+      ../../modules/hyprland.nix
       ../../modules/stylix.nix
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
-      ../../modules/kde.nix
     ];
 
    # Bootloader.
