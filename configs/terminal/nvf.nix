@@ -158,34 +158,24 @@
       };
 
       # vim.lazy.plugins = {
-      #   "tabout.nvim" = {
-      #     package = pkgs.vimPlugins.tabout-nvim;
-      #     setupModule = "tabout";
-      #     setupOpts = {
-      #       tabkey = "<Tab>";  # Key to trigger tabout
-      #       backwards_tabkey = "<S-Tab>";  # Key to go backwards
-      #       act_as_tab = true;  # Shift content if tab out is not possible
-      #       act_as_shift_tab = false;  # Reverse shift content if tab out is not possible
-      #       default_tab = "<C-t>";  # Default tab action
-      #       default_shift_tab = "<C-d>";  # Reverse shift default action
-      #       enable_backwards = true;
-      #       completion = true;  # If tabkey is used in completion popup
-      #       tabouts = [
-      #         { open = "\""; close = "\""; }
-      #         { open = "'"; close = "'"; }
-      #         { open = "`"; close = "`"; }
-      #         # { open = "<"; close = ">"; }
-      #         { open = "{"; close = "}"; }
-      #         { open = "["; close = "]"; }
-      #         { open = "("; close = ")"; }
-      #       ];
-      #       ignore_beginning = true;
-      #       exclude = [ ];  # Filetypes to exclude
-      #     }; 
 
-      #     event = [ "InsertCharPre" ];  # Lazy-load on insert event
-      #     priority = 1000;
-      #   };
+      #   "magma-nvim" = {
+      #     package = pkgs.vimPlugins.magma-nvim;
+      #     setupModule = "magma";
+      #     setupOpts = {
+      #       automatically_open_output = false;
+      #       image_provider = "ueberzug";
+      #     };
+      #     cmd = [
+      #       "MagmaEvaluateOperator"
+      #       "MagmaEvaluateLine"
+      #       "MagmaEvaluateVisual"
+      #       "MagmaReevaluateCell"
+      #       "MagmaDelete"
+      #       "MagmaShowOutput"
+      #     ];
+      #   }; 
+      
       # };
 
     };
