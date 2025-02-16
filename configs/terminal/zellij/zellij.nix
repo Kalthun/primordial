@@ -46,7 +46,6 @@
       }
 
       default_tab_template {
-        children
         pane size=1 borderless=true {
 
           plugin location="file://${pkgs.zjstatus}/bin/zjstatus.wasm" {
@@ -124,6 +123,7 @@
             datetime_timezone "America/Toronto"
           }
         }
+      children
       }
     }
   '';
