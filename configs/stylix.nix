@@ -2,13 +2,15 @@
 
   stylix = {
 
-    # image = ../wallpapers/kanagawa.png;
+    # image = ../wallpapers/fre/fre-aftermath.png;
 
     enable = true;
     autoEnable = true;
 
+    # polarity = "dark";
+
     opacity = {
-      terminal = 0.95;
+      terminal = 0.85;
       desktop = 0.0;
       applications = 0.85;
       popups = 0.85;
@@ -16,9 +18,9 @@
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
-    # override = {
-    #  base03 = "";
-    # };
+    override = {
+      base03 = "717C7C";
+    };
 
     fonts = {
       serif = {
