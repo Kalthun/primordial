@@ -59,6 +59,7 @@
 
         languages = {
           enableLSP = true;
+          enableExtraDiagnostics = true;
           enableTreesitter = true;
 
           nix = {
@@ -107,6 +108,7 @@
           nvim-cursorline.enable = true;
           cinnamon-nvim.enable = true; # DESC: Scrolls nicely
           highlight-undo.enable = true;
+          fidget-nvim.enable = true;
 
           indent-blankline = {
             enable = true;

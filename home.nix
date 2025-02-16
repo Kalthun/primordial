@@ -46,9 +46,6 @@
 
     nwg-look
 
-    nil
-    # Other one
-
     # Might move later
     discord
     obsidian
