@@ -8,7 +8,7 @@
     autoEnable = true;
 
     opacity = {
-      terminal = 0.75;
+      terminal = 0.95;
       desktop = 0.0;
       applications = 0.85;
       popups = 0.85;
