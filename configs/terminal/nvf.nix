@@ -41,11 +41,11 @@
         spellcheck.enable = true;
         autopairs.nvim-autopairs.enable = true;
         
-        autocomplete = {
-          nvim-cmp.enable = true;
-          blink-cmp.mappings = {
+        autocomplete.nvim-cmp = {
+          enable = true;
+          mappings = {
             complete = null;
-            confirm = "<C-Space>";
+            confirm = "<Tab>";
           };
         };
 
