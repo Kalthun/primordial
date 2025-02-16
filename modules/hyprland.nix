@@ -8,6 +8,7 @@
     # hyprcursor
     hyprsunset
     hyprsysteminfo
+    hyprpicker
     waybar
     wl-clipboard
   ];

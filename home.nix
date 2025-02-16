@@ -56,6 +56,7 @@
     vscode
 
     blender
+    obs-studio
 
 
     # Fonts

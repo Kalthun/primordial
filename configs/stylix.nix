@@ -17,7 +17,7 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
     # override = {
-    #  base03 = "E6C384";
+    #  base03 = "";
     # };
 
     fonts = {
