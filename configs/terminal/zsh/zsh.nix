@@ -88,7 +88,7 @@
           filename="main"
         fi
 
-        g++ "$filename".cpp -o output -lGL -lGLEW -lglfw && ./output
+        g++ "$filename".cpp -o output -lGL -lGLEW -lglfw -lglut && ./output
       }
 
       # Lazyrun for cpp OpenCV
