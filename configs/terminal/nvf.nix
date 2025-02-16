@@ -46,6 +46,8 @@
           mappings = {
             complete = null;
             confirm = "<Tab>";
+            next = "<S-Tab>";
+            previous = null;
           };
         };
 
