@@ -14,6 +14,19 @@
         viAlias = true;
         vimAlias = true;
 
+        keymaps = [
+          {
+            key = "<S-u>";
+            mode = "n";
+            action = "<C-r>";
+          }
+          {
+            key = "<C-r>";
+            mode = "n";
+            action = "<S-u>";
+          }
+        ];
+
         # Use Stylix Colors
         theme = {
           enable = true;
@@ -27,7 +40,15 @@
 
         spellcheck.enable = true;
         autopairs.nvim-autopairs.enable = true;
-        autocomplete.nvim-cmp.enable = true;
+        
+        autocomplete = {
+          nvim-cmp.enable = true;
+          blink-cmp.mappings = {
+            complete = null;
+            confirm = "<C-Space>";
+          };
+        };
+
         snippets.luasnip.enable = true;
 
         statusline.lualine = {
@@ -157,6 +178,7 @@
               { open = "\""; close = "\""; }
               { open = "'"; close = "'"; }
               { open = "`"; close = "`"; }
+              # { open = "<"; close = ">"; }
               { open = "{"; close = "}"; }
               { open = "["; close = "]"; }
               { open = "("; close = ")"; }
