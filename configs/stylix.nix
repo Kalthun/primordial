@@ -8,13 +8,17 @@
     autoEnable = true;
 
     opacity = {
-      terminal = 0.85;
+      terminal = 0.75;
       desktop = 0.0;
       applications = 0.85;
       popups = 0.85;
     };
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
+
+    # override = {
+    #  base03 = "E6C384";
+    # };
 
     fonts = {
       serif = {
