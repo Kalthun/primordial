@@ -7,7 +7,7 @@
   programs.zellij = {
 
     enable = true;
-    # enableZshIntegration = false;
+    enableZshIntegration = false;
 
     settings = {
 

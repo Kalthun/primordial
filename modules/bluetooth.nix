@@ -6,7 +6,7 @@
 }: {
   hardware = {
     bluetooth.enable = true;
-    bluetooth.powerOnBoot = false;
+    bluetooth.powerOnBoot = true;
   };
 
   services.blueman.enable = true;
