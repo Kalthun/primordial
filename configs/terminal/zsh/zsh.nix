@@ -26,7 +26,7 @@
 
       plugins = [
         "git"
-        "sudo"
+        "sudo" # Fix
         "vi-mode"
         "colored-man-pages"
       ];
