@@ -126,8 +126,11 @@
 
           indent-blankline = {
             enable = true;
-            setupOpts.indent = {
-              smart_indent_cap = true;
+            setupOpts = {
+              scope = {
+                show_start = true;
+                show_end = false;
+              };
             };
           };
 
