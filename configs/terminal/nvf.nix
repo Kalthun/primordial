@@ -104,8 +104,9 @@
           tabstop = 4;
           shiftwidth = 0;
           expandtab = true;
+
           wrap = true;
-          autoindent = true;
+          # autoindent = true;
           cmdheight = 0;
         };
 
@@ -115,25 +116,6 @@
           enable = true;
           gitsigns.enable = true;
           gitsigns.codeActions.enable = false; # ERR message
-        };
-
-        visuals = {
-          nvim-scrollbar.enable = true;
-          nvim-cursorline.enable = true;
-          cinnamon-nvim.enable = true; # DESC: Scrolls nicely
-          highlight-undo.enable = true;
-          fidget-nvim.enable = true;
-
-          indent-blankline = {
-            enable = true;
-            setupOpts = {
-              scope = {
-                show_start = true;
-                show_end = false;
-              };
-            };
-          };
-
         };
 
         treesitter = {
@@ -150,6 +132,23 @@
           highlight.enable = true;
           indent.enable = true;
         };
+
+        visuals = {
+          nvim-scrollbar.enable = true;
+          nvim-cursorline.enable = true;
+          cinnamon-nvim.enable = true; # DESC: Scrolls nicely
+          highlight-undo.enable = true;
+          fidget-nvim.enable = true;
+
+          indent-blankline = {
+            enable = true;
+            setupOpts = {
+              scope = {
+              };
+            };
+          };
+
+        }; 
 
         luaConfigRC.myconfig = /* lua */ ''
           local tab_settings = {
