@@ -73,7 +73,7 @@
             format_precedence "lrc"
 
             // Bugged
-            hide_frame_for_single_pane "true"
+            hide_frame_for_single_pane "false"
 
             border_enabled  "false"
             border_char     "─"

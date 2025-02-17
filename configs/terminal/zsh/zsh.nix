@@ -60,24 +60,25 @@
 
       export KEYTIMEOUT=1
 
-
-      if [[ -z $ZELLIJ ]]; then
-
-        SESSION_NAME="DEF"
-        SESSION_LIST=$(zellij list-sessions)
-
-        if echo "$SESSION_LIST" | sed 's/\x1B\[[0-9;]*m//g' | rg -q "^$SESSION_NAME.*\bEXITED\b"; then
-          zellij delete-session "DEF"
+      if echo "$TERMINFO" | rg -q "kitty"; then
+        if [[ -z $ZELLIJ ]]; then
+  
+          SESSION_NAME="DEF"
+          SESSION_LIST=$(zellij list-sessions)
+  
+          if echo "$SESSION_LIST" | sed 's/\x1B\[[0-9;]*m//g' | rg -q "^$SESSION_NAME.*\bEXITED\b"; then
+            zellij delete-session "DEF"
+          fi
+  
+          SESSION_LIST=$(zellij list-sessions --short)
+  
+          if echo "$SESSION_LIST" | rg -q "$SESSION_NAME"; then
+            zellij attach "DEF"
+          else
+            zellij --session "DEF"
+          fi
+  
         fi
-
-        SESSION_LIST=$(zellij list-sessions --short)
-
-        if echo "$SESSION_LIST" | rg -q "$SESSION_NAME"; then
-          zellij attach "DEF"
-        else
-          zellij --session "DEF"
-        fi
-
       fi
 
       # Lazyrun for cpp OpenGL
