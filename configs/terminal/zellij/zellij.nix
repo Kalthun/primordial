@@ -45,6 +45,10 @@
         pane name="btop" command="btop" close_on_exit=false
       }
 
+      tab name="" {
+        pane name="nvtop" command="nvtop" close_on_exit=false
+      }
+
       default_tab_template {
         pane size=1 borderless=true {
 

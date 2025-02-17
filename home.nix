@@ -33,6 +33,8 @@
     ripgrep
     skim
 
+    nvtopPackages.full
+
     ueberzugpp
 
     unzip
