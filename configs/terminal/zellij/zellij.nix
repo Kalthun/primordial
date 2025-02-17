@@ -7,13 +7,13 @@
   programs.zellij = {
 
     enable = true;
-    enableZshIntegration = false;
+    # enableZshIntegration = false;
 
     settings = {
 
       on_force_close = "detach";
       simplified_ui = true;
-      pane_frames = true;
+      pane_frames = false;
 
       ui = {
         pane_frames = {
@@ -45,7 +45,7 @@
         pane name="btop" command="btop" close_on_exit=false
       }
 
-      tab name="" {
+      tab name="󰤽 " {
         pane name="nvtop" command="nvtop" close_on_exit=false
       }
 
@@ -73,7 +73,7 @@
             format_precedence "lrc"
 
             // Bugged
-            hide_frame_for_single_pane "false"
+            hide_frame_for_single_pane "true"
 
             border_enabled  "false"
             border_char     "─"
