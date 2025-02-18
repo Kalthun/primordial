@@ -14,6 +14,7 @@
         viAlias = true;
         vimAlias = true;
 
+        # Just remaps Shift+U to redo
         keymaps = [
           {
             key = "<S-u>";
@@ -41,12 +42,12 @@
             base06 = config.lib.stylix.colors.base06;
             base07 = config.lib.stylix.colors.base07;
             base08 = config.lib.stylix.colors.base08;
-            base09 = config.lib.stylix.colors.base0E;
+            base09 = config.lib.stylix.colors.base0E; # Swapped
             base0A = config.lib.stylix.colors.base0A;
             base0B = config.lib.stylix.colors.base0B;
             base0C = config.lib.stylix.colors.base0C;
             base0D = config.lib.stylix.colors.base0D;
-            base0E = config.lib.stylix.colors.base09;
+            base0E = config.lib.stylix.colors.base09; # Swapped
             base0F = config.lib.stylix.colors.base0F;
           };
           transparent = true;
@@ -106,7 +107,7 @@
           expandtab = true;
 
           wrap = true;
-          autoindent = false;
+          autoindent = false; # breaks the proper setting
           cmdheight = 0;
         };
 
