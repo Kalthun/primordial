@@ -1,6 +1,7 @@
 { config, pkgs, lib, ... }: {
 
   environment.systemPackages = with pkgs; [
+    xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     # hyprpaper
@@ -17,13 +18,12 @@
     enable = true;
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal
+      pkgs.xdg-desktop-portal-hyprland
     ];
   };
 
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
-
 
   # TODO: Seperate variables that should be with specific programs
   environment = {
