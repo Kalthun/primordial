@@ -147,6 +147,23 @@
           indent-blankline.enable = true;
         }; 
 
+        extraPlugins = with pkgs.vimPlugins; {
+          smart-tab = {
+            package = pkgs.vimUtils.buildVimPlugin {
+              pname = "smart-tab.nvim";
+              version = "main";
+              src = pkgs.fetchFromGitHub {
+                owner = "boltlessengineer";
+                repo = "smart-tab.nvim";
+                rev = "main";  # Consider using a specific commit hash for stability
+                sha256 = "1kjcy7r3qlpkkl9w99dcb4w8dz944i3i339hmsl7cah273972lqz";  # Replace this with the correct SHA256 hash
+              };
+            };
+            setup = "require('smart-tab').setup()";
+          };
+        };
+
+
         luaConfigRC.myconfig = /* lua */ ''
           local tab_settings = {
             nix = { tabstop = 2 },
