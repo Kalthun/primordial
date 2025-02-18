@@ -34,19 +34,19 @@
       }
 
       tab name="󱃣 " {
-        pane name="yazi" command="yazi" close_on_exit=false
+        pane name="yazi" command="yazi" start_suspended=true close_on_exit=false
       }
 
       tab name=" " {
-        pane name="Spotify" command="spotify_player" close_on_exit=false
+        pane name="Spotify" command="spotify_player" start_suspended=true close_on_exit=false
       }
 
       tab name="󰄨 " {
-        pane name="btop" command="btop" close_on_exit=false
+        pane name="btop" command="btop" start_suspended=true close_on_exit=false
       }
 
       tab name="󰤽 " {
-        pane name="nvtop" command="nvtop" close_on_exit=false
+        pane name="nvtop" command="nvtop" start_suspended=true close_on_exit=false
       }
 
       default_tab_template {
