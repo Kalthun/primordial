@@ -27,6 +27,7 @@
     ./spotify-player/spotify-player.nix
 
     # Tools
+    ./zoxide/zoxide.nix
     ./bat/bat.nix
     ./btop/btop.nix
 
