@@ -5,8 +5,8 @@
     ./hypr/hyprland/hyprland.nix
     ./hypr/hyprpaper.nix
     # ./hypr/hyprcursor.nix
-    ./hypr/hyprlock.nix
-    ./hypr/hypridle.nix
+    # ./hypr/hyprlock.nix
+    # ./hypr/hypridle.nix
 
     ./mako.nix
     ./fuzzel.nix

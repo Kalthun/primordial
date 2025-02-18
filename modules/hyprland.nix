@@ -9,7 +9,7 @@
     hyprsunset
     hyprsysteminfo
     hyprpicker
-    waybar
+    # waybar
     wl-clipboard
   ];
 
