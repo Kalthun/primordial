@@ -55,9 +55,7 @@
 
         spellcheck.enable = true;
         autopairs.nvim-autopairs.enable = true;
-
-        autocomplete.nvim-cmp.enable = true;
-        
+        autocomplete.nvim-cmp.enable = true; 
         snippets.luasnip.enable = true;
 
         statusline.lualine = {
@@ -71,6 +69,7 @@
 
         telescope.enable = true;
         notify.nvim-notify.enable = true;
+        filetree.neo-tree.enable = true;
 
         languages = {
           enableLSP = true;
@@ -98,6 +97,11 @@
             enable = true;
           };
 
+        };
+
+        binds = {
+          whichKey.enable = true;
+          cheatsheet.enable = true;
         };
 
         options = {
