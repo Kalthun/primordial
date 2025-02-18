@@ -106,7 +106,7 @@
           expandtab = true;
 
           wrap = true;
-          # autoindent = true;
+          autoindent = false;
           cmdheight = 0;
         };
 
@@ -135,19 +135,11 @@
 
         visuals = {
           nvim-scrollbar.enable = true;
-          nvim-cursorline.enable = true;
-          cinnamon-nvim.enable = true; # DESC: Scrolls nicely
+          # nvim-cursorline.enable = true;
+          # cinnamon-nvim.enable = true; # DESC: Scrolls nicely
           highlight-undo.enable = true;
           fidget-nvim.enable = true;
-
-          indent-blankline = {
-            enable = true;
-            setupOpts = {
-              scope = {
-              };
-            };
-          };
-
+          indent-blankline.enable = true;
         }; 
 
         luaConfigRC.myconfig = /* lua */ ''
@@ -172,27 +164,6 @@
         '';
 
       };
-
-      # vim.lazy.plugins = {
-
-      #   "magma-nvim" = {
-      #     package = pkgs.vimPlugins.magma-nvim;
-      #     setupModule = "magma";
-      #     setupOpts = {
-      #       automatically_open_output = false;
-      #       image_provider = "ueberzug";
-      #     };
-      #     cmd = [
-      #       "MagmaEvaluateOperator"
-      #       "MagmaEvaluateLine"
-      #       "MagmaEvaluateVisual"
-      #       "MagmaReevaluateCell"
-      #       "MagmaDelete"
-      #       "MagmaShowOutput"
-      #     ];
-      #   }; 
-      
-      # };
 
     };
 
