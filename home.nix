@@ -26,8 +26,7 @@
     fortune
     fastfetch
 
-    eza
-    bat
+    eza  
     tree
     fzf
     ripgrep
