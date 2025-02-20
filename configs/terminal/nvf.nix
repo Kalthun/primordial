@@ -66,7 +66,6 @@
 
         autocomplete.nvim-cmp = {
           enable = true;
-          setupOpts.completion.autocomplete = true;
         };
 
         statusline.lualine = {
