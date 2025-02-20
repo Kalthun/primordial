@@ -1,3 +1,4 @@
+# Test with direnv
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkShell {
