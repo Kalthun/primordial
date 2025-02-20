@@ -3,13 +3,12 @@
     inherit (config.lib.stylix) colors;
 
     smart-tab = pkgs.vimUtils.buildVimPlugin {
-      pname = "smart-tab.nvim";
-      version = "main";
+      name = "smart-tab.nvim";
       src = pkgs.fetchFromGitHub {
         owner = "boltlessengineer";
         repo = "smart-tab.nvim";
         rev = "main";
-        sha256 = "sha256-H1Nx0jgCKnaorjCNEUckJP2GOFmspcQTnfNSPPLxTM4=";
+        sha256 = "1f5371d238022a76a8ae308d11472424fd863859aca5c4139df3523cf2f14cce";
       };
     };
   in
