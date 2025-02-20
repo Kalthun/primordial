@@ -64,12 +64,7 @@
         autopairs.nvim-autopairs.enable = true;
         snippets.luasnip.enable = true;
 
-        autocomplete.nvim-cmp = {
-          enable = true;
-          mappings = {
-            complete = "null";
-          };
-        };
+        autocomplete.nvim-cmp.enable = true;
 
         statusline.lualine = {
           enable = true;
