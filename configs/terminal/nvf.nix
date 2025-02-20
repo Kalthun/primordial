@@ -64,7 +64,10 @@
         autopairs.nvim-autopairs.enable = true;
         snippets.luasnip.enable = true;
 
-        autocomplete.nvim-cmp.enable = true;
+        autocomplete.nvim-cmp = {
+          enable = true;
+          setupOpts.completion.autocomplete = true;
+        };
 
         statusline.lualine = {
           enable = true;
