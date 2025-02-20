@@ -1,6 +1,17 @@
 { config, pkgs, lib, inputs, ... }:
   let
     inherit (config.lib.stylix) colors;
+
+    smart-tab = pkgs.vimUtils.buildVimPlugin {
+      pname = "smart-tab.nvim";
+      version = "main";
+      src = pkgs.fetchFromGitHub {
+        owner = "boltlessengineer";
+        repo = "smart-tab.nvim";
+        rev = "main";
+        sha256 = "sha256-H1Nx0jgCKnaorjCNEUckJP2GOFmspcQTnfNSPPLxTM4=";
+      };
+    };
   in
 {
   programs.nvf = {
@@ -55,7 +66,7 @@
 
         spellcheck.enable = true;
         autopairs.nvim-autopairs.enable = true;
-        autocomplete.nvim-cmp.enable = true; 
+        # autocomplete.nvim-cmp.enable = true; 
         snippets.luasnip.enable = true;
 
         statusline.lualine = {
@@ -140,34 +151,22 @@
 
         visuals = {
           nvim-scrollbar.enable = true;
-          # nvim-cursorline.enable = true;
+          # nvim-cursorline.enable = true; # Wasn't working
           # cinnamon-nvim.enable = true; # DESC: Scrolls nicely
           highlight-undo.enable = true;
           fidget-nvim.enable = true;
           indent-blankline.enable = true;
         }; 
 
-        extraPlugins = with pkgs.vimPlugins; {
-          smart-tab = {
-            package = pkgs.vimUtils.buildVimPlugin {
-              pname = "smart-tab.nvim";
-              version = "main";
-              src = pkgs.fetchFromGitHub {
-                owner = "boltlessengineer";
-                repo = "smart-tab.nvim";
-                rev = "main";  # Consider using a specific commit hash for stability
-                sha256 = "1kjcy7r3qlpkkl9w99dcb4w8dz944i3i339hmsl7cah273972lqz";  # Replace this with the correct SHA256 hash
-              };
-            };
-            setup = "require('smart-tab').setup()";
-          };
-        };
-
+        startPlugins = [
+          smart-tab
+        ];
 
         luaConfigRC.myconfig = /* lua */ ''
+
           local tab_settings = {
             nix = { tabstop = 2 },
-            markdown = { tabstop = 4 },
+            markdown = { tabstop = 2 },
             python = { tabstop = 4 },
             clang = { tabstop = 4 },
             rust = { tabstop = 4 },
@@ -183,6 +182,7 @@
               end
             })
           end
+
         '';
 
       };
