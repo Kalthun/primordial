@@ -1,16 +1,6 @@
 { config, pkgs, lib, inputs, ... }:
   let
-    inherit (config.lib.stylix) colors;
-
-    smart-tab = pkgs.vimUtils.buildVimPlugin {
-      name = "smart-tab.nvim";
-      src = pkgs.fetchFromGitHub {
-        owner = "boltlessengineer";
-        repo = "smart-tab.nvim";
-        rev = "main";
-        sha256 = "1f5371d238022a76a8ae308d11472424fd863859aca5c4139df3523cf2f14cce";
-      };
-    };
+    inherit (config.lib.stylix) colors; 
   in
 {
   programs.nvf = {
@@ -158,7 +148,15 @@
         }; 
 
         startPlugins = [
-          smart-tab
+          (pkgs.vimUtils.buildVimPlugin{
+            name = "smart-tab.nvim";
+            src = pkgs.fetchFromGitHub {
+              owner = "boltlessengineer";
+              repo = "smart-tab.nvim";
+              rev = "main";
+              sha256 = "sha256-H1Nx0jgCKnaorjCNEUckJP2GOFmspcQTnfNSPPLxTM4=";
+            };
+          })
         ];
 
         luaConfigRC.myconfig = /* lua */ ''
