@@ -13,9 +13,9 @@
 
         viAlias = true;
         vimAlias = true;
-
-        # Just remaps Shift+U to redo
+ 
         keymaps = [
+          # Just remaps Shift+U to redo
           {
             key = "<S-u>";
             mode = "n";
@@ -25,6 +25,13 @@
             key = "<C-r>";
             mode = "n";
             action = "<S-u>";
+          }
+
+          # system clip
+          {
+            key = "<leader>y";
+            mode = "v";
+            action = "\"+y";
           }
         ];
 
@@ -55,8 +62,14 @@
 
         spellcheck.enable = true;
         autopairs.nvim-autopairs.enable = true;
-        # autocomplete.nvim-cmp.enable = true; 
         snippets.luasnip.enable = true;
+
+        autocomplete.nvim-cmp = {
+          enable = true;
+          mappings = {
+            complete = "null";
+          };
+        };
 
         statusline.lualine = {
           enable = true;
@@ -147,20 +160,25 @@
           indent-blankline.enable = true;
         }; 
 
-        startPlugins = [
-          (pkgs.vimUtils.buildVimPlugin{
-            name = "smart-tab.nvim";
-            src = pkgs.fetchFromGitHub {
-              owner = "boltlessengineer";
-              repo = "smart-tab.nvim";
-              rev = "main";
-              sha256 = "sha256-H1Nx0jgCKnaorjCNEUckJP2GOFmspcQTnfNSPPLxTM4=";
+        extraPlugins = {
+          
+          smart-tab = {
+            package = pkgs.vimUtils.buildVimPlugin {
+              name = "smart-tab.nvim";
+              src = pkgs.fetchFromGitHub {
+                owner = "boltlessengineer";
+                repo = "smart-tab.nvim";
+                rev = "main";
+                sha256 = "sha256-H1Nx0jgCKnaorjCNEUckJP2GOFmspcQTnfNSPPLxTM4=";
+              };
             };
-          })
-        ];
+            # Setup advanced logic
+            setup = ''require("smart-tab").setup()'';
+          };
 
-        luaConfigRC.myconfig = /* lua */ ''
+        };
 
+        luaConfigRC.tabstops =''
           local tab_settings = {
             nix = { tabstop = 2 },
             markdown = { tabstop = 2 },
@@ -179,7 +197,6 @@
               end
             })
           end
-
         '';
 
       };
