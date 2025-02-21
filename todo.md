@@ -14,3 +14,8 @@
 - Hypr configuration
 
 - Make script for direnv + flake setup
+
+
+## Graphics Assignment
+- Sword pull from furnace
+
