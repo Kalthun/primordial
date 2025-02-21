@@ -12,3 +12,5 @@
   - Specific options for each Host as well
 
 - Hypr configuration
+
+- Make script for direnv + flake setup

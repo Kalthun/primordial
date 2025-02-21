@@ -85,4 +85,4 @@ sudo nixos-rebuild switch --flake ~/primordial/#[hostname]
 
 # TODO
 - [ ] Structure (with nice diagram)
-- [ ] Automate the process more
+- [ ] Install Script
