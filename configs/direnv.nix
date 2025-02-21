@@ -3,6 +3,9 @@
     enable = true;
     enableZshIntegration = true;
     nix-direnv.enable = true;
+    
+    # Probably do this eventually
+    # silent = true;
 
     config = {
       whitelist = {
