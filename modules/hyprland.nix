@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
+    # xdg-desktop-portal-hyprland # ERROR: DO NOT USE THIS (enabled with `prgrams.hyprland.enable`)
     # hyprpaper
     hyprshot
     # hyprcursor
@@ -17,8 +17,9 @@
   xdg.portal = {
     enable = true;
     extraPortals = [
+      pkgs.xdg-desktop-portal
       pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-hyprland
+      # pkgs.xdg-desktop-portal-hyprland # ERROR: see pkgs
     ];
   };
 
