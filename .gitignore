@@ -1,2 +1,5 @@
 # ignore sandbox envs
 .direnv
+
+# ignore c/c++ outputs
+output
