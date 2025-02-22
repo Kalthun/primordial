@@ -4,7 +4,12 @@
     enable = true;
     profile = "kalthun";
     config = {
-      # Checkout
+      displayHorizontalTabs = true;
+      displayWindowControls = false;
+      displayNavButtons = true;
+      displayUrlbarIcons = true;
+      displaySidebarTools = true;
+      displayTitles = true;
     };
   };
 
