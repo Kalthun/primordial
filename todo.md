@@ -19,3 +19,7 @@
 ## Graphics Assignment
 - Sword pull from furnace
 
+## COMP- : Big Data
+- Setup IPYNB
+- Setup Spreadsheet
+- Setup Zoom
