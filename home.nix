@@ -56,7 +56,7 @@
     blender
     obs-studio
     vlc
-
+    zoom-us
 
     # Fonts
     nerd-fonts.caskaydia-cove
