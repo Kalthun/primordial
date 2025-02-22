@@ -14,6 +14,7 @@
       lg = "lazygit";
       nv = "nvim";
       zj = "zellij";
+      cdr = "cd $(git rev-parse --show-toplevel)";
     };
 
     history = {
