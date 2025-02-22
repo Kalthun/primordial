@@ -62,6 +62,10 @@
     nerd-fonts.caskaydia-cove
   ];
 
+  xdg.configFile."zoomus.conf".text = ''
+    xwayland=false
+  '';
+
   imports = [
     inputs.nvf.homeManagerModules.default
     inputs.textfox.homeManagerModules.default
