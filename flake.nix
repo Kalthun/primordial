@@ -16,6 +16,8 @@
     nvf.url = "github:notashelf/nvf";
 
     zjstatus.url = "github:dj95/zjstatus";
+
+    textfox.url = "github:adriankarlen/textfox";
   };
 
   outputs = {
@@ -26,6 +28,7 @@
     stylix,
     nvf,
     zjstatus,
+    textfox,
     ...
   } @ inputs:
   # let

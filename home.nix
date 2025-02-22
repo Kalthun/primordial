@@ -64,6 +64,7 @@
 
   imports = [
     inputs.nvf.homeManagerModules.default
+    inputs.textfox.homeManagerModules.default
     ./configs
   ];
 

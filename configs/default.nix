@@ -8,6 +8,7 @@
     ./browsers
 
     ./stylix.nix
+    ./textfox.nix
     ./direnv.nix
 
   ];
