@@ -49,20 +49,9 @@
 
     };
 
-    # Not Working
-    # iconTheme.enable = true;
-    # iconTheme.package = pkgs.vscode-extensions.tal7aouy.icons;
-
     cursor = {
-      # package = pkgs.catppuccin-cursors.mochaLight;
-      # name = "catppuccin-mocha-light-cursors";
-
-      # package = pkgs.pokemon-cursor;
-      # name = "Pokemon";
-
       package = pkgs.gruppled-black-cursors;
       name = "gruppled_black";
-
       size = 24;
     };
 
@@ -74,6 +63,7 @@
 
   };
 
+  # For hyprland border
   wayland.windowManager.hyprland.settings.general."col.active_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base0D}ff) rgba(${config.lib.stylix.colors.base08}ff) 45deg";
   wayland.windowManager.hyprland.settings.general."col.inactive_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base04}aa)";
 
