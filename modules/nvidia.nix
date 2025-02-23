@@ -20,4 +20,7 @@
 
   };
 
+  # For ollama CUDA
+  services.ollama.acceleration = "cuda";
+
 }
