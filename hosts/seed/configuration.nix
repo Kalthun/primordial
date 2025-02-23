@@ -14,8 +14,8 @@
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
 
-      ../../modules/cachix.nix
-      ../../modules/ollama.nix
+      # ../../modules/cachix.nix
+      # ../../modules/ollama.nix
     ];
 
    # Bootloader.
