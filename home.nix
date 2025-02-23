@@ -46,6 +46,7 @@
     brightnessctl
 
     nwg-look
+    cachix
 
     # Might move later
     discord
