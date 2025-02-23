@@ -4,4 +4,7 @@
     enable =  true;
   };
 
+  # Lookup more options
+  services.open-webui.enable =  true;
+
 }
