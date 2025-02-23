@@ -14,6 +14,9 @@
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
       ../../modules/bluetooth.nix
+
+      ../../modules/cachix.nix
+      ../../modules/ollama.nix
     ];
 
   # For Hybrid GPU 
