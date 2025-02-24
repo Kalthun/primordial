@@ -23,3 +23,5 @@
 - Setup IPYNB
 - Setup Spreadsheet
 - Setup Zoom
+
+# Fix HM and OV
