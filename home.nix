@@ -35,6 +35,7 @@
     nvtopPackages.full
 
     ueberzugpp
+    zenity # hyprshots selector
 
     unzip
     zip
