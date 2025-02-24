@@ -28,5 +28,7 @@
 - Setup IPYNB
 - Setup Spreadsheet
 - Setup Zoom
+- Webcam
+- Mic
 
 # Fix HM and OV
