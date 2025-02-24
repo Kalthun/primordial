@@ -4,7 +4,7 @@
     enable = true;
     profile = "kalthun";
     config = {
-      displayHorizontalTabs = true;
+      tabs.horizontal.enable = true; # why?
       displayWindowControls = false;
       displayNavButtons = true;
       displayUrlbarIcons = true;
