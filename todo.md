@@ -5,6 +5,11 @@
 
 - nvim
   - tab stuff (have menu appear but only change tab after hitting enter)
+  - Prio:
+    - Text In Snips (Smart-Tab)
+    - Snips
+    - Smart-Tab
+    - Autocomplete
 
 - Seperate Configs for Each Host
   - Ideally as much as I can in Flake.nix
