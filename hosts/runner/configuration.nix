@@ -54,8 +54,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  programs.thunar.enable = true;
-
   # Enable sound with pipewire.
   # sound.enable = true;
   services.pulseaudio.enable = false;

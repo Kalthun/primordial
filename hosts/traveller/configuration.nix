@@ -19,7 +19,7 @@
       ../../modules/ollama.nix
     ];
 
-  # For Hybrid GPU 
+  # For Hybrid GPU
   hardware.nvidia.prime = {
     offload = {
       enable = true;
@@ -67,8 +67,6 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  programs.thunar.enable = true;
 
   # Enable sound with pipewire.
   # sound.enable = true;

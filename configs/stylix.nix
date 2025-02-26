@@ -23,6 +23,7 @@
     };
 
     fonts = {
+
       serif = {
         package = pkgs.dejavu_fonts;
         name = "DejaVu Serif";
@@ -49,17 +50,22 @@
 
     };
 
+    # iconTheme = {
+    #   enable = true;
+    #   package = pkgs.
+    # };
+
     cursor = {
       package = pkgs.gruppled-black-cursors;
       name = "gruppled_black";
       size = 24;
     };
 
-    targets.neovim = {
-      plugin = "base16-nvim";
-      transparentBackground.main = true;
-      transparentBackground.signColumn = true;
-    };
+    # targets.neovim = {
+    #   plugin = "base16-nvim";
+    #   transparentBackground.main = true;
+    #   transparentBackground.signColumn = true;
+    # };
 
   };
 

@@ -54,6 +54,7 @@
     obsidian
     pavucontrol
     vscode
+    xfce.thunar
 
     blender
     obs-studio
