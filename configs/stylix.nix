@@ -73,4 +73,12 @@
   wayland.windowManager.hyprland.settings.general."col.active_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base0D}ff) rgba(${config.lib.stylix.colors.base08}ff) 45deg";
   wayland.windowManager.hyprland.settings.general."col.inactive_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base04}aa)";
 
+  gtk = {
+    enable = true;
+    iconTheme = {
+      package = pkgs.arc-icon-theme;
+      name = "Arc";
+    };
+  };
+
 }
