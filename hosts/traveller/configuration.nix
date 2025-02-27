@@ -29,6 +29,12 @@
     nvidiaBusId = "PCI:1:0:0";
   };
 
+  # For Power-Saving
+  services = {
+    # tlp.enable = true; # Only one at a time
+    power-profiles-daemon.enable = true;
+  };
+
    # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
