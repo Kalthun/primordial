@@ -18,17 +18,17 @@
 
 - Hypr configuration
 
-- Make script for direnv + flake setup
+- Make script for direnv + flake setup: like taking a config from sandboxes into other
 
+- Learn Nix Scripting
 
-## Graphics Assignment
-- Sword pull from furnace
 
 ## COMP- : Big Data
 - Setup IPYNB
 - Setup Spreadsheet
-- Setup Zoom
-- Webcam
+- [X] Setup Zoom
+- [X] Webcam
 - Mic
 
-# Fix HM and OV
+# Fix Home-Manager and Overlays
+- Eventually
