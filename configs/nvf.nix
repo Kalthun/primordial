@@ -79,7 +79,6 @@
 
         telescope.enable = true;
         notify.nvim-notify.enable = true;
-        filetree.neo-tree.enable = true;
 
         languages = {
           enableLSP = true;
