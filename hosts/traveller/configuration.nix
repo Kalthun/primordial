@@ -15,19 +15,19 @@
       ../../modules/esc-caps-lock.nix
       ../../modules/bluetooth.nix
 
-      ../../modules/cachix.nix
-      ../../modules/ollama.nix
+      # ../../modules/cachix.nix
+      # ../../modules/ollama.nix
     ];
 
   # For Hybrid GPU
-  hardware.nvidia.prime = {
-    offload = {
-      enable = true;
-      enableOffloadCmd = true;
-    };
-    intelBusId = "PCI:0:2:0";
-    nvidiaBusId = "PCI:1:0:0";
-  };
+  # hardware.nvidia.prime = {
+  #   offload = {
+  #     enable = true;
+  #     enableOffloadCmd = true;
+  #   };
+  #   intelBusId = "PCI:0:2:0";
+  #   nvidiaBusId = "PCI:1:0:0";
+  # };
 
   # For Power-Saving
   services = {
