@@ -22,13 +22,7 @@
 
 - Learn Nix Scripting
 
-
-## COMP- : Big Data
-- Setup IPYNB
-- Setup Spreadsheet
-- [X] Setup Zoom
-- [X] Webcam
-- Mic
-
 # Fix Home-Manager and Overlays
 - Eventually
+
+# Fix nvidia for laptop
