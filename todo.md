@@ -4,7 +4,7 @@
   - keybinds! (through ALT only so it doesn't mess with everything else)
 
 - nvim
-  - tab stuff (have menu appear but only change tab after hitting enter)
+  - tab stuff (have menu appear but only change tab after hitting enter (ENTER + SHIFT = accept first))
   - Prio:
     - Text In Snips (Smart-Tab)
     - Snips
