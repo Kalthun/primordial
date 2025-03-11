@@ -26,3 +26,7 @@
 - Eventually
 
 # Fix nvidia for laptop
+
+# Goals
+- Code more in Nix
+- Code more in Lua (for modding/plugin dev)
