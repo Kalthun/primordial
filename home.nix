@@ -61,6 +61,8 @@
     vlc
     zoom-us
 
+    tailscale
+
     # Fonts
     nerd-fonts.caskaydia-cove
   ];
