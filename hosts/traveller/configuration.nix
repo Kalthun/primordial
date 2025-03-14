@@ -14,6 +14,7 @@
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
       ../../modules/bluetooth.nix
+      ../../modules/steam.nix
 
       # ../../modules/cachix.nix
       # ../../modules/ollama.nix
