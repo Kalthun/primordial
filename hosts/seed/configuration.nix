@@ -13,6 +13,8 @@
       ../../modules/stylix.nix
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
+
+      ../../modules/steam.nix
     ];
 
    # Bootloader.
