@@ -14,7 +14,7 @@
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
 
-      ../../modules/steam.nix
+      # ../../modules/steam.nix
     ];
 
    # Bootloader.
