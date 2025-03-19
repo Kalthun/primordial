@@ -50,22 +50,17 @@
 
     };
 
-    # iconTheme = {
-    #   enable = true;
-    #   package = pkgs.
-    # };
-
-    cursor = {
+      cursor = {
       package = pkgs.gruppled-black-cursors;
       name = "gruppled_black";
       size = 24;
     };
 
-    # targets.neovim = {
-    #   plugin = "base16-nvim";
-    #   transparentBackground.main = true;
-    #   transparentBackground.signColumn = true;
-    # };
+    targets = {
+      firefox.profileNames = [
+        "kalthun"
+      ];
+    };
 
   };
 
