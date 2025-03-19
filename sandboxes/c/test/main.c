@@ -1,19 +1,22 @@
 #include "stdio.h"
 
-void yell() {
-    puts("HELP! HELP ME!");
+int factorial(int num) {
+
+    // Invalid Input (Break Case)
+    if (num < 0) return -1;
+
+    // Base Case
+    if (num == 0) return 1;
+    
+    // Recurse
+    return num * factorial(num - 1);
 }
 
 int main(void) {
 
-    int x = 2;
-    int y = 3;
-
-    int z = x + y;
-
-    printf("%d\n",z);
-
-    yell();
+    printf("%d\n", factorial(-1));
+    printf("%d\n", factorial(0));
+    printf("%d\n", factorial(5));
 
     return 0;
 
