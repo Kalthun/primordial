@@ -60,6 +60,7 @@
     zoom-us
 
     tailscale
+    ventoy-full-gtk
 
   ];
 
