@@ -53,6 +53,7 @@
     pavucontrol
     vscode
     xfce.thunar
+    xfce.thunar-volman
 
     blender
     obs-studio
