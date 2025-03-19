@@ -13,6 +13,7 @@
       ../../modules/tuigreet.nix
       ../../modules/esc-caps-lock.nix
       ../../modules/bluetooth.nix
+      ../../modules/thunar.nix
     ];
 
    # Bootloader.
