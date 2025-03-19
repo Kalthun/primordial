@@ -34,18 +34,6 @@
   # let
   # in
   {
-    # TODO: Less Repetition
-    # home-manager.nixosModules.home-manager = {
-    #     useGlobalPkgs = true;
-    #     useUserPackages = true;
-    #     backupFileExtension = "backup";
-    #     extraSpecialArgs = { inherit inputs; };
-
-    #     users = {
-    #       "kalthun" = import ./home.nix;
-    #     };
-    # };
-
     nixosConfigurations = {
 
       seed = nixpkgs.lib.nixosSystem {
