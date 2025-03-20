@@ -47,6 +47,7 @@
             rust-analyzer
 
             dioxus-cli
+            cargo-wasi
           ];
 
           env = {
