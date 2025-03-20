@@ -3,3 +3,13 @@
 
 # ignore c/c++ outputs
 output
+
+# rust defaults
+debug/
+target/
+
+**/*.rs.bk
+
+*.pdb
+
+.idea/
