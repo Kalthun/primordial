@@ -45,6 +45,8 @@
             cargo-edit
             cargo-watch
             rust-analyzer
+
+            dioxus-cli
           ];
 
           env = {
