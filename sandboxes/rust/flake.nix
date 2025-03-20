@@ -55,7 +55,7 @@
             rust-analyzer
 
             dioxus-cli
-
+            wasm-bindgen-cli
           ];
 
           env = {
