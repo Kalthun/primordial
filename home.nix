@@ -59,6 +59,7 @@
     zoom-us
 
     tailscale
+    remmina
     ventoy-full-gtk
 
   ];
