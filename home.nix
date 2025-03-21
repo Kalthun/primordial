@@ -60,6 +60,8 @@
 
     tailscale
     remmina
+    rustdesk
+
     ventoy-full-gtk
 
   ];
