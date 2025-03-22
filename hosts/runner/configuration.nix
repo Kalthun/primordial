@@ -19,6 +19,12 @@
    # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  
+  # For Power-Saving
+  services = {
+    # tlp.enable = true; # Only one at a time
+    power-profiles-daemon.enable = true;
+  };
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
