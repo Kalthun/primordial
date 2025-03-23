@@ -15,6 +15,7 @@
       ../../modules/esc-caps-lock.nix
       ../../modules/bluetooth.nix
       ../../modules/thunar.nix
+      ../../modules/tailscale.nix
 
       # ../../modules/cachix.nix
       # ../../modules/ollama.nix
@@ -41,7 +42,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "traveller"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
