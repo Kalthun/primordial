@@ -63,6 +63,7 @@
     parsec-bin
 
     ventoy-full-gtk
+    usbutils
 
   ];
 
