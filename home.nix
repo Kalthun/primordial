@@ -64,6 +64,7 @@
 
     ventoy-full-gtk
     usbutils
+    nm-tray
 
   ];
 
