@@ -23,6 +23,7 @@
       modules-center = [ "hyprland/window" ];
       modules-right = [
         "tray"
+        "custom/divider"
         "network"
         # "custom/divider"
         # "backlight"
@@ -71,7 +72,6 @@
       network = {
         format = "󰖩 {essid}";
         format-disconnected = "󰖪 disconnected";
-        # Applet/manager
       };
       # TODO: click opens calendar?
       clock = {

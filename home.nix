@@ -64,7 +64,7 @@
 
     ventoy-full-gtk
     usbutils
-    nm-tray
+    networkmanagerapplet
 
   ];
 
