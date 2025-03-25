@@ -23,8 +23,8 @@
       modules-center = [ "hyprland/window" ];
       modules-right = [
         "tray"
-        "custom/divider"
-        "network"
+        # "custom/divider"
+        # "network"
         # "custom/divider"
         # "backlight"
         "custom/divider"
