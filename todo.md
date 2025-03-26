@@ -25,8 +25,6 @@
 # Fix Home-Manager and Overlays
 - Eventually
 
-# Fix nvidia for laptop
+Textfox logic for the nav and tabs
 
-# Goals
-- Code more in Nix
-- Code more in Lua (for modding/plugin dev)
+(toggle tabs when split into top-bottom)
