@@ -85,8 +85,8 @@
         tooltip = false;
         format-muted = " Muted";
         on-click = "pavucontrol"; # TODO: make floating in spot
-        on-scroll-up = "pamixer -i 5";
-        on-scroll-down = "pamixer -d 5";
+        on-scroll-up = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
+        on-scroll-down = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
         scroll-step = 5;
         format-icons = {
           headphone = " ";
