@@ -28,3 +28,7 @@
 Textfox logic for the nav and tabs
 
 (toggle tabs when split into top-bottom)
+
+
+# IMPORTANT!
+MAKE SHORTCUTS FOR OBSIDIAN AGAIN
