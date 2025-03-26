@@ -39,7 +39,6 @@
     zip
 
     lazygit
-    gh
     lazydocker
 
     playerctl

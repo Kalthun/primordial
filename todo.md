@@ -32,3 +32,5 @@ Textfox logic for the nav and tabs
 
 # IMPORTANT!
 MAKE SHORTCUTS FOR OBSIDIAN AGAIN
+
+.vtg file ext
