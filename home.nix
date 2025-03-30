@@ -64,6 +64,7 @@
     ventoy-full-gtk
     usbutils
     networkmanagerapplet
+    protonvpn-gui
 
   ];
 
