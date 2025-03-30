@@ -66,6 +66,9 @@
     networkmanagerapplet
     protonvpn-gui
 
+    moonlight-qt
+    sunshine
+
   ];
 
   imports = [
