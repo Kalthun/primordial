@@ -65,7 +65,6 @@
     usbutils
     networkmanagerapplet
     protonvpn-gui
-    wgnord
 
   ];
 
