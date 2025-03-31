@@ -51,6 +51,11 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.firewall = {
+    allowedUDPPorts = [ 1193 51820 ];
+    allowedTCPPorts = [ 443 ];
+    checkReversePath = false;
+  };
 
   # Set your time zone.
   time.timeZone = "America/Toronto";
