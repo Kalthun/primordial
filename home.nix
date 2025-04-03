@@ -60,6 +60,7 @@
     tailscale
     remmina
     parsec-bin
+    # rustdesk
 
     ventoy-full-gtk
     usbutils

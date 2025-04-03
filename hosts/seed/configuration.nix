@@ -16,10 +16,6 @@
       ../../modules/bluetooth.nix
       ../../modules/thunar.nix
       ../../modules/tailscale.nix
-      
-      ../../modules/virtual-box.nix
-
-      # ../../modules/steam.nix
     ];
 
    # Bootloader.
