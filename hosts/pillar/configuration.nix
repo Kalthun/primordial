@@ -16,9 +16,6 @@
       ../../modules/bluetooth.nix
       ../../modules/thunar.nix
       ../../modules/tailscale.nix
-
-      ../../modules/steam.nix
-      ../../modules/ollama.nix
     ];
 
    # Bootloader.
