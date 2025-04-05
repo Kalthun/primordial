@@ -86,3 +86,7 @@ sudo nixos-rebuild switch --flake ~/primordial/#[hostname]
 # TODO
 - [ ] Structure (with nice diagram)
 - [ ] Install Script
+- [ ] Headless
+
+# IMPORTANT EXTRA
+When using dev shells with vscode, you need to run them with code . and configure the interprater
