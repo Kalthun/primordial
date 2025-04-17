@@ -17,8 +17,7 @@
       ../../modules/thunar.nix
       ../../modules/tailscale.nix
 
-      # ../../modules/cachix.nix
-      # ../../modules/ollama.nix
+      ../../modules/ollama.nix
     ];
 
   # For Hybrid GPU
