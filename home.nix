@@ -52,23 +52,22 @@
     pavucontrol
     vscode
 
-    blender
+    # blender
     obs-studio
     vlc
     zoom-us
 
-    tailscale
-    remmina
+    # remmina
     parsec-bin
     # rustdesk
 
-    ventoy-full-gtk
+    # ventoy-full-gtk
     usbutils
     networkmanagerapplet
     protonvpn-gui
 
-    moonlight-qt
-    sunshine
+    # moonlight-qt
+    # sunshine
 
   ];
 
