@@ -40,6 +40,7 @@
 
     lazygit
     lazydocker
+    ngrok
 
     playerctl
     brightnessctl
