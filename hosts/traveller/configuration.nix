@@ -16,26 +16,7 @@
       ../../modules/bluetooth.nix
       ../../modules/thunar.nix
       ../../modules/tailscale.nix
-
-      ../../modules/ollama.nix
     ];
-
-  # For Hybrid GPU
-  hardware.nvidia.prime = {
-    offload = {
-      enable = true;
-      enableOffloadCmd = true;
-    };
-    # sync.enable = true;
-    intelBusId = "PCI:0:2:0";
-    nvidiaBusId = "PCI:1:0:0";
-  };
-
-  # For Power-Saving
-  services = {
-    # tlp.enable = true; # Only one at a time
-    power-profiles-daemon.enable = true;
-  };
 
    # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -51,7 +32,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
   networking.firewall = {
-    allowedUDPPorts = [ 1193 51820 ];
+    allowedUDPPorts = [ 1194 51820 ];
     allowedTCPPorts = [ 443 ];
     checkReversePath = false;
   };
