@@ -21,6 +21,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+
     fortune
     fastfetch
 
@@ -53,7 +54,6 @@
     pavucontrol
     vscode
 
-    # blender
     obs-studio
     vlc
     zoom-us
