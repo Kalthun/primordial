@@ -15,7 +15,7 @@
       nv = "nvim";
       zj = "zellij";
       cdr = "cd $(git rev-parse --show-toplevel)";
-      cls = "clear"
+      cls = "clear";
     };
 
     history = {
