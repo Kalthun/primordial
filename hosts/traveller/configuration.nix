@@ -16,6 +16,7 @@
       ../../modules/bluetooth.nix
       ../../modules/thunar.nix
       ../../modules/tailscale.nix
+      # ../../modules/mysql.nix
     ];
 
    # Bootloader.
