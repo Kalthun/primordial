@@ -5,12 +5,10 @@
     enable = true;
 
     settings = {
-      
-      defaultTimeout = "5000";
+      default-timeout = 5000;
       anchor = "bottom-right";
       layer = "top";
       margin = "0";
-
     };
    
   };
