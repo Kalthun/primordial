@@ -36,7 +36,7 @@
     };
 
     # Add custom configuration lines to .zshrc
-    initExtra = ''
+    initContent = ''
       # Enable custom cursor styles for vi-mode
       export ZVM_CURSOR_STYLE_ENABLED=true
 

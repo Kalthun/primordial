@@ -55,8 +55,9 @@
         telescope.enable = true;
         notify.nvim-notify.enable = true;
 
+        lsp.enable = true;
+
         languages = {
-          enableLSP = true;
           enableExtraDiagnostics = true;
           enableTreesitter = true;
 
