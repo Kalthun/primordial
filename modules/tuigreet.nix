@@ -6,7 +6,7 @@
       default_session = {
         command = "${pkgs.writeShellScriptBin "tuigreet-wrapper" ''
           FORTUNE=$(${pkgs.fortune}/bin/fortune)
-          exec ${pkgs.greetd.tuigreet}/bin/tuigreet -t -r --asterisks --greeting "$FORTUNE" --cmd Hyprland
+          exec ${pkgs.tuigreet}/bin/tuigreet -t -r --asterisks --greeting "$FORTUNE" --cmd Hyprland
         ''}/bin/tuigreet-wrapper";
         user = "greeter";
       };

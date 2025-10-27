@@ -4,8 +4,12 @@
 
     enable = true;
 
-    userName = "kalthun";
-    userEmail = "jameskwm@protonmail.com";
+    settings = {
+      user = {
+        name = "kalthun";
+        email = "jameskwmail@gmail.com";
+      };
+    };
 
   };
 
