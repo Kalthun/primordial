@@ -53,6 +53,8 @@
     obsidian
     pavucontrol
     vscode
+    code-cursor
+    rstudio
 
     obs-studio
     vlc
