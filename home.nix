@@ -72,6 +72,8 @@
     # moonlight-qt
     # sunshine
 
+    standardnotes
+
   ];
 
   imports = [
