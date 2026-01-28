@@ -22,6 +22,6 @@
 
   # For ollama CUDA
   # NOTE: probably a way of doing thing based on if nvidia is set
-  services.ollama.acceleration = "cuda";
+  # services.ollama.acceleration = "cuda";
 
 }
