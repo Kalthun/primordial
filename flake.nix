@@ -121,6 +121,23 @@
         ];
       };
 
+      root = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/root/configuration.nix
+          (import ./overlays)
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.kalthun = import ./home.nix;
+            home-manager.backupFileExtension = "backup";
+            home-manager.extraSpecialArgs = {inherit inputs;};
+          }
+          stylix.nixosModules.stylix # <- Includes both NixOS and Homemanager Modules
+        ];
+      };
+
     };
   };
 }
