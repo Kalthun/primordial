@@ -38,6 +38,7 @@
 
     unzip
     zip
+    p7zip
 
     lazygit
     lazydocker
