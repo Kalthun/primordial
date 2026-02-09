@@ -20,7 +20,7 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
 
     override = {
-      base03 = "717C7C";
+      base02 = "717C7C";
     };
 
     fonts = {
@@ -71,10 +71,16 @@
 
   gtk = {
     enable = true;
+
+    theme = {
+      name = lib.mkForce "Nordic";
+      package = lib.mkForce pkgs.nordic;
+    };
+
     iconTheme = {
       package = pkgs.arc-icon-theme;
       name = "Arc";
     };
-  };
+  }; 
 
 }
