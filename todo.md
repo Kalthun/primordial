@@ -34,3 +34,6 @@ Textfox logic for the nav and tabs
 MAKE SHORTCUTS FOR OBSIDIAN AGAIN
 
 .vtg file ext
+
+redo script running and setup for evil-helix (and probably nvim) using the new feature
+NOTE: `realpath` is the GOAT
