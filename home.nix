@@ -54,6 +54,7 @@
     obsidian
     pavucontrol
     vscode
+    godot
 
     obs-studio
     vlc

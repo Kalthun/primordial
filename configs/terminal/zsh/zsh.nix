@@ -64,22 +64,22 @@
 
       if echo "$TERMINFO" | rg -q "kitty"; then
         if [[ -z $ZELLIJ ]]; then
-  
+
           SESSION_NAME="DEF"
           SESSION_LIST=$(zellij list-sessions)
-  
+
           if echo "$SESSION_LIST" | sed 's/\x1B\[[0-9;]*m//g' | rg -q "^$SESSION_NAME.*\bEXITED\b"; then
             zellij delete-session "DEF"
           fi
-  
+
           SESSION_LIST=$(zellij list-sessions --short)
-  
+
           if echo "$SESSION_LIST" | rg -q "$SESSION_NAME"; then
             zellij attach "DEF"
           else
             zellij --session "DEF"
           fi
-  
+
         fi
       fi
 
@@ -107,6 +107,18 @@
 
       gcr() {
         git clone git@github.com:Kalthun/"$1".git
+      }
+
+      crun() {
+        local flags="-std=c11"
+
+        if [[ "$1" == "-v" ]]; then
+            flags="-Wall -Wextra -std=c11"
+            shift
+        fi
+
+        local name="''${1%.c}"
+        gcc $flags "$1" -lm -o "exe_$name" && "./exe_$name"
       }
 
       # Let's Just Hope Buddy
